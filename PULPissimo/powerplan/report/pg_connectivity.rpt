@@ -1,0 +1,32 @@
+Loading cell instances...
+Number of Standard Cells: 34501
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 293
+Number of VDD Vias: 103459
+Number of VDD Terminals: 0
+Number of VSS Wires: 293
+Number of VSS Vias: 102512
+Number of VSS Terminals: 0
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 4
+  Number of floating vias: 4
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 4
+  Number of floating vias: 4
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 1 seconds.
+{PATH_18_3 PATH_19_3 PATH_18_2 PATH_19_2 PATH_18_1 PATH_19_1 PATH_18_0 PATH_19_0 VIA_SA_0 VIA_SA_1 VIA_SA_2 VIA_SA_3 VIA_SA_4 VIA_SA_5 VIA_SA_6 VIA_SA_7}
