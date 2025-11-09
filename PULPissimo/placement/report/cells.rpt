@@ -1,0 +1,215 @@
+****************************************
+Report : cell
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Tue Sep 30 14:25:47 2025
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model
+    U - Unbound (missing)
+    s - user size_only
+    S - implicit size_only
+    d - user dont_touch
+    D - derived dont_touch
+    o - synthetic operator
+
+
+Cell                      Reference       Library          Attributes
+--------------------------------------------------------------------------------
+U3                        OR2X1_RVT       saed32rvt_ss0p95vn40c
+i_apb_demux_addr_decode   addr_decode_00000003_00000002    h
+i_clock_gen               clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                                                           h
+i_demux                   apb_demux_intf_32_32_00000003_I_slv_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_mst_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                           h
+i_err_slv                 apb_err_slv_intf_APB_ADDR_WIDTH32_APB_DATA_WIDTH32_I_slv_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                           h
+i_padframe                padframe_adapter_I_apb_cfg_slave_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                           h
+i_rstgen_per_clk          rstgen_1                         h
+i_rstgen_slow_clk         rstgen_0                         h
+i_rstgen_soc_clk          rstgen_2                         h
+i_soc_domain              soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                           h
+placeAPS_CLK_ISO_0        NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_1        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_10       NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_11       DELLN1X2_RVT    saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_12       NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_13       NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_14       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_15       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_16       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_17       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_18       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_19       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_2        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_20       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_21       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_22       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_23       DELLN1X2_RVT    saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_24       DELLN1X2_RVT    saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_25       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_26       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_27       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_28       NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_29       NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_3        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_30       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_31       NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_32       NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_4        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_5        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_6        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_7        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_8        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeAPS_CLK_ISO_9        NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+                                                           s
+placeHFSBUF_100595_10795  NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_107487_10817  NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_121_3618      NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_1244_3925     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_1424_2439     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_1522_5739     NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_1531_5742     NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_180_4405      NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_1892_5420     NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_18_3881       NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_195_7975      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_196_3724      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_199092_10818  NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_212_3728      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_225_3722      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_22839_385     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_23165_383     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_23485_379     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_23856_380     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_24250_387     NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_249_3726      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_2615_2441     NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_28841_413     NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_3342_96       NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_3372_3453     NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_3379_f_97     NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_3381_3455     NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_3383_98       NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_3441_3189     NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_34470_9749    NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_34884_9747    NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_36176_9755    NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_37642_9756    NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_3771_145      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_37852_9757    NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_38024_9758    NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_39246_9778    NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_39411_9782    NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_405_4402      NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_4099_143      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_41967_9809    NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_44129_9808    NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_44641_9780    NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_44866_9810    NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_50060_10049   NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_50215_10051   NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_50339_10050   NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_51800_248     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_53018_245     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_54026_244     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_54181_243     NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_54286_251     NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_5707_147      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeHFSBUF_61488_414     NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_62450_10065   NBUFFX32_RVT    saed32rvt_ss0p95vn40c
+placeHFSBUF_99874_10789   NBUFFX16_RVT    saed32rvt_ss0p95vn40c
+placeHFSINV_10643_160     INVX32_RVT      saed32rvt_ss0p95vn40c
+placeHFSINV_15670_161     INVX16_RVT      saed32rvt_ss0p95vn40c
+placeHFSINV_51939_10063   INVX32_RVT      saed32rvt_ss0p95vn40c
+placeHFSINV_62429_10064   INVX32_RVT      saed32rvt_ss0p95vn40c
+placeZBUF_inst_11604      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_11618      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_11642      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_11650      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_11656      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_11674      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_11847      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_12125      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_12132      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_12134      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_12137      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_12139      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_12302      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_12654      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_13690      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_16301      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_16648      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_16654      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_16656      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_16663      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_18473      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_18475      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_18488      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_19813      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_19819      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_19825      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_20948      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_26635      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_29530      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_29550      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_29568      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_29577      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_29702      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_29711      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_30144      NBUFFX8_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_30366      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_30369      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_30390      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_30743      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_30756      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_31224      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_32385      NBUFFX4_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_32393      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_32396      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_32413      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+placeZBUF_inst_32502      NBUFFX2_RVT     saed32rvt_ss0p95vn40c
+--------------------------------------------------------------------------------
+Total 149 cells
+
+1
