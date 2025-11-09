@@ -1,0 +1,173 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Sep 29 05:13:32 2025
+****************************************
+
+  Startpoint: i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/operation_reg_2_ (rising edge-triggered flip-flop clocked by tck)
+  Endpoint: i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/td_o_reg (falling edge-triggered flip-flop clocked by tck)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: tck
+  Path Type: max
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock tck (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.34      0.34
+
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/operation_reg_2_/CLK (DFFARX1_RVT)
+                                                                     0.06      0.00      0.34 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/operation_reg_2_/Q (DFFARX1_RVT)
+                                                                     0.06      0.24      0.58 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/operation[2] (net)
+                                                    3      4.36
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U57/A3 (NAND3X0_RVT)
+                                                                     0.06      0.00      0.58 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U57/Y (NAND3X0_RVT)
+                                                                     0.11      0.10      0.69 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n57 (net)
+                                                    2      2.32
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U56/A2 (NAND2X0_RVT)
+                                                                     0.11      0.00      0.69 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U56/Y (NAND2X0_RVT)
+                                                                     0.14      0.15      0.83 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/word_size_bits[5] (net)
+                                                    2      4.23
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U55/A3 (AO21X1_RVT)
+                                                                     0.14      0.00      0.83 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U55/Y (AO21X1_RVT)
+                                                                     0.05      0.11      0.94 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/word_size_bits[4] (net)
+                                                    1      3.32
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U347/A1 (XNOR2X1_RVT)
+                                                                     0.05      0.00      0.94 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U347/Y (XNOR2X1_RVT)
+                                                                     0.04      0.13      1.07 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n354 (net)
+                                                    1      0.79
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U351/A1 (AND4X1_RVT)
+                                                                     0.04      0.00      1.07 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U351/Y (AND4X1_RVT)
+                                                                     0.07      0.12      1.19 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/N178 (net)
+                                                    4      4.41
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U334/A2 (NAND2X0_RVT)
+                                                                     0.07      0.00      1.19 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U334/Y (NAND2X0_RVT)
+                                                                     0.09      0.09      1.29 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n168 (net)
+                                                    2      2.96
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U31/S0 (MUX21X1_RVT)
+                                                                     0.09      0.00      1.29 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U31/Y (MUX21X1_RVT)
+                                                                     0.07      0.15      1.44 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n165 (net)
+                                                    1      0.90
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U304/A3 (NAND4X0_RVT)
+                                                                     0.07      0.00      1.44 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U304/Y (NAND4X0_RVT)
+                                                                     0.08      0.08      1.52 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n154 (net)
+                                                    1      1.77
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U298/A3 (AO221X2_RVT)
+                                                                     0.08      0.00      1.52 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U298/Y (AO221X2_RVT)
+                                                                     0.08      0.16      1.68 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/module_next_state[0] (net)
+                                                    5      8.46
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U282/A1 (NAND3X0_RVT)
+                                                                     0.08      0.00      1.68 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U282/Y (NAND3X0_RVT)
+                                                                     0.11      0.10      1.77 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n135 (net)
+                                                    2      2.28
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U281/A2 (NAND2X0_RVT)
+                                                                     0.11      0.00      1.77 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U281/Y (NAND2X0_RVT)
+                                                                     0.10      0.12      1.90 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n136 (net)
+                                                    1      2.49
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U277/A2 (NAND3X0_RVT)
+                                                                     0.10      0.00      1.90 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U277/Y (NAND3X0_RVT)
+                                                                     0.14      0.14      2.04 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n133 (net)
+                                                    3      3.34
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U74/A (INVX1_RVT)
+                                                                     0.14      0.00      2.04 f
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U74/Y (INVX1_RVT)
+                                                                     0.07      0.08      2.12 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n359 (net)
+                                                    2      2.32
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U276/A4 (AO22X1_RVT)
+                                                                     0.07      0.00      2.12 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U276/Y (AO22X1_RVT)
+                                                                     0.03      0.09      2.22 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/n130 (net)
+                                                    1      0.92
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U35/A2 (MUX21X1_RVT)
+                                                                     0.03      0.00      2.22 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/U35/Y (MUX21X1_RVT)
+                                                                     0.05      0.11      2.32 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/module_tdo_o (net)
+                                                    1      2.53
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/U2/A1 (AND2X1_RVT)
+                                                                     0.05      0.00      2.32 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/U2/Y (AND2X1_RVT)
+                                                                     0.06      0.09      2.41 r
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/tdo_o (net)
+                                                    1      4.85
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/U6/A3 (AO222X1_RVT)
+                                                                     0.06      0.00      2.41 r
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/U6/Y (AO222X1_RVT)
+                                                                     0.05      0.13      2.54 r
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/n5 (net)
+                                                    1      1.33
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/U5/A2 (OR2X1_RVT)
+                                                                     0.05      0.00      2.54 r
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/U5/Y (OR2X1_RVT)
+                                                                     0.05      0.08      2.62 r
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/n2 (net)
+                                                    1      3.75
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/U3/A3 (AO22X2_RVT)
+                                                                     0.05      0.00      2.62 r
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/U3/Y (AO22X2_RVT)
+                                                                     0.11      0.15      2.77 r
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/tdo_comb (net)
+                                                    1     15.53
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/placeHFSBUF_115_1122/A (NBUFFX8_RVT)
+                                                                     0.11      0.00      2.77 r
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/placeHFSBUF_115_1122/Y (NBUFFX8_RVT)
+                                                                     0.08      0.11      2.88 r
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/placeHFSNET_1180 (net)
+                                                    1     49.31
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/td_o_reg/D (DFFNX1_RVT)
+                                                                     0.09      0.03      2.91 r
+  data arrival time                                                                      2.91
+
+  clock tck (fall edge)                                                        3.00      3.00
+  clock network delay (propagated)                                             0.31      3.31
+  i_soc_domain/i_pulp_soc/jtag_tap_top_i/tap_top_i/td_o_reg/CLK (DFFNX1_RVT)
+                                                                     0.07      0.00      3.31 f
+  clock uncertainty                                                           -0.20      3.11
+  library setup time                                                          -0.04      3.07
+  data required time                                                                     3.07
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     3.07
+  data arrival time                                                                     -2.91
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.16
+
+
+1
