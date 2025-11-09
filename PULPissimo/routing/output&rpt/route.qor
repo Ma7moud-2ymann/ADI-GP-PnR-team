@@ -1,0 +1,302 @@
+****************************************
+Report : qor
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Tue Sep 30 03:55:05 2025
+****************************************
+
+
+Scenario           'func_fast'
+Timing Path Group  'ref_clk'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.22
+Critical Path Slack:               6.42
+Critical Path Clk Period:          7.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'soc_clk'
+----------------------------------------
+Levels of Logic:                    195
+Critical Path Length:             19.87
+Critical Path Slack:               0.76
+Critical Path Clk Period:         21.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'pref_clk'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.13
+Critical Path Slack:               2.57
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.01
+Total Hold Violation:             -0.04
+No. of Hold Violations:               8
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'tck'
+----------------------------------------
+Levels of Logic:                     20
+Critical Path Length:              2.45
+Critical Path Slack:               0.21
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'sys_clk_core'
+----------------------------------------
+Levels of Logic:                    179
+Critical Path Length:             18.34
+Critical Path Slack:               2.31
+Critical Path Clk Period:         21.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'per_per_clk'
+----------------------------------------
+Levels of Logic:                     16
+Critical Path Length:              2.49
+Critical Path Slack:               0.12
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'inverted_tck'
+----------------------------------------
+Levels of Logic:                      7
+Critical Path Length:              0.87
+Critical Path Slack:               1.94
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'INREG'
+----------------------------------------
+Levels of Logic:                      7
+Critical Path Length:              1.59
+Critical Path Slack:               4.06
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_fast'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      3
+Critical Path Length:              0.69
+Critical Path Slack:               1.41
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'ref_clk'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.22
+Critical Path Slack:               6.42
+Critical Path Clk Period:          7.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'soc_clk'
+----------------------------------------
+Levels of Logic:                    194
+Critical Path Length:             20.49
+Critical Path Slack:               0.13
+Critical Path Clk Period:         21.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'pref_clk'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.13
+Critical Path Slack:               2.57
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.01
+Total Hold Violation:             -0.04
+No. of Hold Violations:               8
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'tck'
+----------------------------------------
+Levels of Logic:                     20
+Critical Path Length:              2.52
+Critical Path Slack:               0.12
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'sys_clk_core'
+----------------------------------------
+Levels of Logic:                    178
+Critical Path Length:             18.92
+Critical Path Slack:               1.73
+Critical Path Clk Period:         21.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'per_per_clk'
+----------------------------------------
+Levels of Logic:                     16
+Critical Path Length:              2.57
+Critical Path Slack:               0.05
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'inverted_tck'
+----------------------------------------
+Levels of Logic:                      7
+Critical Path Length:              0.90
+Critical Path Slack:               1.91
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'INREG'
+----------------------------------------
+Levels of Logic:                      7
+Critical Path Length:              1.63
+Critical Path Slack:               4.02
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'func_slow'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      3
+Critical Path Length:              0.71
+Critical Path Slack:               1.39
+Critical Path Clk Period:          6.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:           3625
+Hierarchical Port Count:         360226
+Leaf Cell Count:                 195801
+Buf/Inv Cell Count:               31261
+Buf Cell Count:                   17877
+Inv Cell Count:                   13384
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:        161177
+Sequential Cell Count:            34624
+Macro Count:                         72
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:           440187.83
+Noncombinational Area:        241312.78
+Buf/Inv Area:                  93811.41
+Total Buffer Area:             70355.70
+Total Inverter Area:           23455.71
+Macro/Black Box Area:        3648073.11
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                        4329573.71
+Cell Area (netlist and physical only):      4329573.71
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:            206478
+Nets with Violations:              1831
+Max Trans Violations:                23
+Max Cap Violations:                1828
+----------------------------------------
+
+1
