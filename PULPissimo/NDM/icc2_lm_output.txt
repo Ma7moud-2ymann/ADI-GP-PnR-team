@@ -1,0 +1,25 @@
+
+icc2_lm_shell> set common_path "/home/ICer/Desktop/pulp/libraries/SAED32"
+/home/ICer/Desktop/pulp/libraries/SAED32
+icc2_lm_shell> set MainSearchDir "/home/ICer/Desktop/pulp"
+/home/ICer/Desktop/pulp
+icc2_lm_shell> 
+icc2_lm_shell> set dbFilesOfRVT "$common_path/STD"
+/home/ICer/Desktop/pulp/libraries/SAED32/STD
+icc2_lm_shell> set tech_file_path "/home/ICer/Desktop/pulp/libraries/SAED32/saed32nm_1p9m_mw.tf"
+/home/ICer/Desktop/pulp/libraries/SAED32/saed32nm_1p9m_mw.tf
+icc2_lm_shell> set lib_name "1_ndm"
+1_ndm
+icc2_lm_shell> set target_library "$dbFilesOfRVT/saed32rvt_ss0p95vn40c.db"
+/home/ICer/Desktop/pulp/libraries/SAED32/STD/saed32rvt_ss0p95vn40c.db
+icc2_lm_shell> set std_cell_lef "$common_path/saed32nm_rvt_1p9m.lef"
+/home/ICer/Desktop/pulp/libraries/SAED32/saed32nm_rvt_1p9m.lef
+icc2_lm_shell> create_workspace -flow exploration -technology ${tech_file_path} $lib_name
+Information: Loading technology file '/home/ICer/Desktop/pulp/libraries/SAED32/saed32nm_1p9m_mw.tf' (FILE-007)
+... created workspace 1_ndm in exploration flow
+icc2_lm_shell> exit
+Maximum memory usage for this session: 51.91 MB
+CPU usage for this session:      5 seconds (  0.00 hours)
+Elapsed time for this session:    152 seconds (  0.04 hours)
+Thank you for using IC Compiler II Library Manager.
+
