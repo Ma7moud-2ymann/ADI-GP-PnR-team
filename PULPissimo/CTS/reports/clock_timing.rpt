@@ -1,0 +1,92 @@
+Information: The stitching and editing of coupling caps is turned OFF for design 'pulpissimo6.dlib:pulpissimo_placment_6.design'. (TIM-125)
+Information: The RC mode used is CTO for design 'pulpissimo'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 206991, routed nets = 1006, across physical hierarchy nets = 0, parasitics cached nets = 22257, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Sep 29 05:49:56 2025
+****************************************
+
+  Mode: func
+  Clock: ref_clk
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  i_rstgen_slow_clk/i_rstgen_bypass/synch_regs_q_reg_0_/CLK
+                                                        0.00              rp-+       fast
+  i_rstgen_slow_clk/i_rstgen_bypass/synch_regs_q_reg_1_/CLK
+                                                        0.00      0.00    rp-+       fast
+
+------------------------------------------------------------------------------------------
+
+  Mode: func
+  Clock: soc_clk
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/u_udma_ctrl/r_cg_reg_2_/CLK
+                                                        0.87              rp-+       slow
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/i_clk_gate_sys_udma/i_tc_clk_gating/clk_en_reg/CLK
+                                                        0.07      0.80    rpi-+      slow
+
+------------------------------------------------------------------------------------------
+
+  Mode: func
+  Clock: pref_clk
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_3__i_clk_gate_per/r_reg_reg_1_/CLK
+                                                        0.96              rp-+       slow
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_3__i_clk_gate_per/i_clk_gate/i_tc_clk_gating/clk_en_reg/CLK
+                                                        0.15      0.81    rpi-+      slow
+
+------------------------------------------------------------------------------------------
+
+  Mode: func
+  Clock: tck
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/input_shift_reg_reg_60_/CLK
+                                                        0.35              rp-+       slow
+  i_soc_domain/i_pulp_soc/i_lint_jtag/dbg_module_i/i_dbg_lint/internal_reg_error_reg_3_/CLK
+                                                        0.29      0.06    rp-+       slow
+
+------------------------------------------------------------------------------------------
+
+  Mode: func
+  Clock: sys_clk_core
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/u_tx_channels/tx_channels_6__u_tx_ch_ctrl/r_counters_reg_0_/CLK
+                                                        0.92              rp-+       slow
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/hyper_0__i_udma_hyper_wrap/i_udma_hyper_top/u_fifo/r_inflight_reg_3_/CLK
+                                                        0.77      0.15    rp-+       slow
+
+------------------------------------------------------------------------------------------
+
+  Mode: func
+  Clock: per_per_clk
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/uart_0__i_udma_uart_wrap/i_udma_uart_top/u_uart_tx/reg_bit_count_reg_2_/CLK
+                                                        0.97              rp-+       slow
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/uart_0__i_udma_uart_wrap/i_udma_uart_top/u_uart_tx/reg_data_reg_2_/CLK
+                                                        0.85      0.12    rp-+       slow
+
+------------------------------------------------------------------------------------------
+
+  Mode: func
+  Clock: inverted_tck
+
+  No local skews.
+
+1
