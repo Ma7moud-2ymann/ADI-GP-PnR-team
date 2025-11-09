@@ -1,0 +1,70 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Tue Sep 30 14:25:52 2025
+****************************************
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_15__26_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/placeHFSBUF_86955_659/Y (NBUFFX16_RVT)
+                                                   0.07      0.07 r
+  i_soc_domain/i_pulp_soc/placeHFSBUF_70621_569/Y (NBUFFX16_RVT)
+                                                   0.07      0.14 r
+  i_soc_domain/i_pulp_soc/placeHFSBUF_68246_559/Y (NBUFFX8_RVT)
+                                                   0.07      0.20 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1558.06 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.97    1559.03 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_15__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.09    1559.12 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_15__clock_gate_i/placeAPS_CLK_ISO_55/Y (NBUFFX4_RVT)
+                                                   0.06    1559.18 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/placeSGI238_32113/Y (AND2X1_RVT)
+                                                   0.08    1559.26 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/placepopt_d_inst_32134/Y (NBUFFX16_RVT)
+                                                   0.08    1559.33 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U1275/Y (AO22X1_RVT)
+                                                   0.10    1559.44 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_15__26_/D (LATCHX2_RVT)
+                                                   0.00    1559.44 r
+  data arrival time                                        1559.44
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.07     10.23
+  transparency close edge                                   10.23
+
+  data required time                                        10.23
+  ------------------------------------------------------------------------
+  data required time                                        10.23
+  data arrival time                                        -1559.44
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1549.21
+
+
+1
