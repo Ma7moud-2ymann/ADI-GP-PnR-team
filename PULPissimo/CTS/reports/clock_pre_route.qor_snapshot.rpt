@@ -1,0 +1,69 @@
+***********************************************
+Report          : create_qor_snapshot (clock_pre_route)
+Design          : pulpissimo
+Version         : O-2018.06-SP1
+Date            : Mon Sep 29 05:13:29 2025
+Time unit       : 1.00ns
+Resistance unit : 1.00MOhm
+Capacitance unit: 1.00fF
+Voltage unit    : 1.00V
+Current unit    : 1.00uA
+Power unit      : 1.00uW
+Location        : /home/ICer/Desktop/pulpissimo/NDM/./
+***********************************************
+No. of scenario = 2
+s1 = func_fast
+s2 = func_slow
+------------------------------------------------------------------------
+WNS of each timing group:                       s1        s2 
+------------------------------------------------------------------------
+per_per_clk                                 0.4113    0.3266 
+ref_clk                                     6.5182    6.5172 
+inverted_tck                                2.0530    1.8290 
+tck                                         0.2448    0.1647 
+REGOUT                                      1.3853    1.3446 
+soc_clk                                     1.5071    0.9901 
+sys_clk_core                                2.8125    2.3186 
+INREG                                       4.3388    4.3076 
+pref_clk                                    2.6430    2.6423 
+------------------------------------------------------------------------
+Setup WNS:                                  0.2448    0.1647      0.1647 
+Setup TNS:                                  0.0000    0.0000      0.0000
+Number of setup violations:                      0         0           0 
+Hold WNS:                                  -0.0410   -0.0655     -0.0655 
+Hold TNS:                                  -0.1299   -0.2067     -0.2067 
+Number of hold violations:                       4         6           6 
+Number of max trans violations:                 25        37          37 
+Number of max cap violations:                 1305      2116        2116 
+Number of min pulse width violations:            0         0           0 
+------------------------------------------------------------------------
+Area:                                                        4321904.918
+Cell count:                                                       196625
+Buf/inv cell count:                                                32084
+Std cell utilization:                                             0.2001
+CPU(s):                                                              842
+Mem(Mb):                                                            2667
+Host name:                                                        IC_EDA
+------------------------------------------------------------------------
+Histogram:             s1   s2 
+------------------------------------------------------------------------
+Max violations:         0    0 
+   above ~ -0.7  ---    0    0 
+    -0.6 ~ -0.7  ---    0    0 
+    -0.5 ~ -0.6  ---    0    0 
+    -0.4 ~ -0.5  ---    0    0 
+    -0.3 ~ -0.4  ---    0    0 
+    -0.2 ~ -0.3  ---    0    0 
+    -0.1 ~ -0.2  ---    0    0 
+       0 ~ -0.1  ---    0    0 
+------------------------------------------------------------------------
+Min violations:         4    6 
+  -0.06 ~ above  ---    0    2 
+  -0.05 ~ -0.06  ---    0    1 
+  -0.04 ~ -0.05  ---    1    0 
+  -0.03 ~ -0.04  ---    2    0 
+  -0.02 ~ -0.03  ---    0    1 
+  -0.01 ~ -0.02  ---    1    0 
+      0 ~ -0.01  ---    0    2 
+------------------------------------------------------------------------
+Snapshot report (index) is created and can be viewed using file "/home/ICer/Desktop/pulpissimo/NDM/.//index.html"
