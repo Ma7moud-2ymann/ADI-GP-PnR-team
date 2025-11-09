@@ -1,0 +1,15 @@
+#@ # 
+#@ # Running icc2_lm_shell Version O-2018.06-SP1 for linux64 -- Jul 17, 2018
+#@ # Date:   Thu Sep 11 00:45:33 2025
+#@ # Run by: ICer@IC_EDA
+#@ 
+
+set common_path "/home/ICer/Desktop/pulp/libraries/SAED32"
+set MainSearchDir "/home/ICer/Desktop/pulp"
+set dbFilesOfRVT "$common_path/STD"
+set tech_file_path "/home/ICer/Desktop/pulp/libraries/SAED32/saed32nm_1p9m_mw.tf"
+set lib_name "1_ndm"
+set target_library "$dbFilesOfRVT/saed32rvt_ss0p95vn40c.db"
+set std_cell_lef "$common_path/saed32nm_rvt_1p9m.lef"
+create_workspace -flow exploration -technology ${tech_file_path} $lib_name
+exit
