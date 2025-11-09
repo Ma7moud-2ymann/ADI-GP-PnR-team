@@ -1,0 +1,24 @@
+****************************************
+Report : report_utilization
+Design : cv32e40p_core
+Version: O-2018.06-SP1
+Date   : Tue Sep 30 04:19:15 2025
+****************************************
+Utilization Ratio:			0.5868
+Utilization options:
+ - Area calculation based on:		site_row of block cv_32_pp
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				965109.6576
+Total Capacity Area:			658387.3536
+Total Area of cells:			386308.9152
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		316488.5440
+
+Utilization of site-rows with:
+ - Site 'unit':				0.5868
+
+0.5868
