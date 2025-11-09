@@ -1,0 +1,1243 @@
+****************************************
+Report : net
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Sep 29 17:28:13 2025
+****************************************
+
+Attributes
+    d - user dont_touch
+    D - derived dont_touch
+
+
+Net                 Fanout    Fanin   Pins         Attributes
+--------------------------------------------------------------------------------
+*Logic0*               453        0    453         
+*Logic1*                74        0     74         
+SYNOPSYS_UNCONNECTED_1
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_10
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_11
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_12
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_13
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_14
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_15
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_16
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_17
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_18
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_19
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_2
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_20
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_21
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_22
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_23
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_24
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_25
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_26
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_27
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_28
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_29
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_3
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_30
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_31
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_32
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_33
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_34
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_35
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_36
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_37
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_38
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_39
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_4
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_40
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_41
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_42
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_43
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_44
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_45
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_46
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_47
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_48
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_49
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_5
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_50
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_51
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_52
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_53
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_54
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_55
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_56
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_57
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_58
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_6
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_7
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_8
+                         0        1      1         
+SYNOPSYS_UNCONNECTED_9
+                         0        1      1         
+n_2_net_                 4        1      5         
+pad_bootsel0             2        2      3         
+pad_bootsel1             2        2      3         
+pad_clk_byp_en           2        1      2         
+pad_hyper_ck             2        2      3         
+pad_hyper_ckn            2        2      3         
+pad_hyper_csn[0]         2        2      3         
+pad_hyper_csn[1]         2        2      3         
+pad_hyper_dq[0]          2        2      3         
+pad_hyper_dq[1]          2        2      3         
+pad_hyper_dq[2]          2        2      3         
+pad_hyper_dq[3]          2        2      3         
+pad_hyper_dq[4]          2        2      3         
+pad_hyper_dq[5]          2        2      3         
+pad_hyper_dq[6]          2        2      3         
+pad_hyper_dq[7]          2        2      3         
+pad_hyper_reset_n        2        2      3         
+pad_hyper_rwds           2        2      3         
+pad_io[0]                6        2      7         
+pad_io[10]               6        2      7         
+pad_io[11]               6        2      7         
+pad_io[12]               6        2      7         
+pad_io[13]               6        2      7         
+pad_io[14]               6        2      7         
+pad_io[15]               6        2      7         
+pad_io[16]               6        2      7         
+pad_io[17]               6        2      7         
+pad_io[18]               6        2      7         
+pad_io[19]               6        2      7         
+pad_io[1]                6        2      7         
+pad_io[20]               6        2      7         
+pad_io[21]               6        2      7         
+pad_io[22]               6        2      7         
+pad_io[23]               6        2      7         
+pad_io[24]               6        2      7         
+pad_io[25]               6        2      7         
+pad_io[26]               6        2      7         
+pad_io[27]               6        2      7         
+pad_io[28]               6        2      7         
+pad_io[29]               6        2      7         
+pad_io[2]                6        2      7         
+pad_io[30]               6        2      7         
+pad_io[31]               6        2      7         
+pad_io[3]                6        2      7         
+pad_io[4]                6        2      7         
+pad_io[5]                6        2      7         
+pad_io[6]                6        2      7         
+pad_io[7]                6        2      7         
+pad_io[8]                6        2      7         
+pad_io[9]                6        2      7         
+pad_jtag_tck           728        2    729         
+pad_jtag_tdi             2        2      3         
+pad_jtag_tdo             2        2      3         
+pad_jtag_tms             2        2      3         
+pad_jtag_trstn           2        2      3         
+pad_ref_clk              2        1      2         
+pad_reset_n              2        1      2         
+s_apb_chip_ctrl_bus_paddr[0]
+                         2        1      3         
+s_apb_chip_ctrl_bus_paddr[10]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[11]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[12]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[13]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[14]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[15]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[16]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[17]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[18]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[19]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[1]
+                         2        1      3         
+s_apb_chip_ctrl_bus_paddr[20]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[21]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[22]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[23]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[24]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[25]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[26]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[27]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[28]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[29]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[2]
+                         4        1      5         
+s_apb_chip_ctrl_bus_paddr[30]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[31]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[3]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[4]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[5]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[6]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[7]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[8]
+                         6        1      7         
+s_apb_chip_ctrl_bus_paddr[9]
+                         6        1      7         
+s_apb_chip_ctrl_bus_penable
+                         3        1      4         
+s_apb_chip_ctrl_bus_pprot[0]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pprot[1]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pprot[2]
+                         3        1      4         
+s_apb_chip_ctrl_bus_prdata[0]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[10]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[11]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[12]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[13]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[14]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[15]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[16]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[17]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[18]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[19]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[1]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[20]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[21]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[22]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[23]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[24]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[25]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[26]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[27]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[28]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[29]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[2]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[30]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[31]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[3]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[4]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[5]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[6]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[7]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[8]
+                         1        1      2         
+s_apb_chip_ctrl_bus_prdata[9]
+                         1        1      2         
+s_apb_chip_ctrl_bus_pready
+                         1        1      2         
+s_apb_chip_ctrl_bus_psel
+                        10        1     11         
+s_apb_chip_ctrl_bus_pslverr
+                         1        1      2         
+s_apb_chip_ctrl_bus_pstrb[0]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pstrb[1]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pstrb[2]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pstrb[3]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[0]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[10]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[11]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[12]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[13]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[14]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[15]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[16]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[17]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[18]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[19]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[1]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[20]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[21]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[22]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[23]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[24]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[25]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[26]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[27]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[28]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[29]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[2]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[30]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[31]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[3]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[4]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[5]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[6]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[7]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[8]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwdata[9]
+                         3        1      4         
+s_apb_chip_ctrl_bus_pwrite
+                         3        1      4         
+s_apb_demux_sel[0]       7        1      8         
+s_apb_demux_sel[1]       7        1      8         
+s_apb_demuxed_0__paddr[0]
+                         0        1      1         
+s_apb_demuxed_0__paddr[10]
+                         0        1      1         
+s_apb_demuxed_0__paddr[11]
+                         0        1      1         
+s_apb_demuxed_0__paddr[12]
+                         0        1      1         
+s_apb_demuxed_0__paddr[13]
+                         0        1      1         
+s_apb_demuxed_0__paddr[14]
+                         0        1      1         
+s_apb_demuxed_0__paddr[15]
+                         0        1      1         
+s_apb_demuxed_0__paddr[16]
+                         0        1      1         
+s_apb_demuxed_0__paddr[17]
+                         0        1      1         
+s_apb_demuxed_0__paddr[18]
+                         0        1      1         
+s_apb_demuxed_0__paddr[19]
+                         0        1      1         
+s_apb_demuxed_0__paddr[1]
+                         0        1      1         
+s_apb_demuxed_0__paddr[20]
+                         0        1      1         
+s_apb_demuxed_0__paddr[21]
+                         0        1      1         
+s_apb_demuxed_0__paddr[22]
+                         0        1      1         
+s_apb_demuxed_0__paddr[23]
+                         0        1      1         
+s_apb_demuxed_0__paddr[24]
+                         0        1      1         
+s_apb_demuxed_0__paddr[25]
+                         0        1      1         
+s_apb_demuxed_0__paddr[26]
+                         0        1      1         
+s_apb_demuxed_0__paddr[27]
+                         0        1      1         
+s_apb_demuxed_0__paddr[28]
+                         0        1      1         
+s_apb_demuxed_0__paddr[29]
+                         0        1      1         
+s_apb_demuxed_0__paddr[2]
+                         0        1      1         
+s_apb_demuxed_0__paddr[30]
+                         0        1      1         
+s_apb_demuxed_0__paddr[31]
+                         0        1      1         
+s_apb_demuxed_0__paddr[3]
+                         0        1      1         
+s_apb_demuxed_0__paddr[4]
+                         0        1      1         
+s_apb_demuxed_0__paddr[5]
+                         0        1      1         
+s_apb_demuxed_0__paddr[6]
+                         0        1      1         
+s_apb_demuxed_0__paddr[7]
+                         0        1      1         
+s_apb_demuxed_0__paddr[8]
+                         0        1      1         
+s_apb_demuxed_0__paddr[9]
+                         0        1      1         
+s_apb_demuxed_0__penable
+                         1        1      2         
+s_apb_demuxed_0__pprot[0]
+                         0        1      1         
+s_apb_demuxed_0__pprot[1]
+                         0        1      1         
+s_apb_demuxed_0__pprot[2]
+                         0        1      1         
+s_apb_demuxed_0__psel
+                         1        1      2         
+s_apb_demuxed_0__pslverr
+                         1        1      2         
+s_apb_demuxed_0__pstrb[0]
+                         0        1      1         
+s_apb_demuxed_0__pstrb[1]
+                         0        1      1         
+s_apb_demuxed_0__pstrb[2]
+                         0        1      1         
+s_apb_demuxed_0__pstrb[3]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[0]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[10]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[11]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[12]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[13]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[14]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[15]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[16]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[17]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[18]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[19]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[1]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[20]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[21]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[22]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[23]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[24]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[25]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[26]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[27]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[28]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[29]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[2]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[30]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[31]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[3]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[4]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[5]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[6]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[7]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[8]
+                         0        1      1         
+s_apb_demuxed_0__pwdata[9]
+                         0        1      1         
+s_apb_demuxed_0__pwrite
+                         0        1      1         
+s_apb_demuxed_1__paddr[0]
+                         0        1      1         
+s_apb_demuxed_1__paddr[1]
+                         0        1      1         
+s_apb_demuxed_1__paddr[2]
+                         3        1      4         
+s_apb_demuxed_1__paddr[3]
+                         3        1      4         
+s_apb_demuxed_1__paddr[4]
+                         4        1      5         
+s_apb_demuxed_1__paddr[5]
+                         2        1      3         
+s_apb_demuxed_1__penable
+                         2        1      3         
+s_apb_demuxed_1__pprot[0]
+                         0        1      1         
+s_apb_demuxed_1__pprot[1]
+                         0        1      1         
+s_apb_demuxed_1__pprot[2]
+                         0        1      1         
+s_apb_demuxed_1__psel
+                         2        1      3         
+s_apb_demuxed_1__pstrb[0]
+                         0        1      1         
+s_apb_demuxed_1__pstrb[1]
+                         0        1      1         
+s_apb_demuxed_1__pstrb[2]
+                         0        1      1         
+s_apb_demuxed_1__pstrb[3]
+                         0        1      1         
+s_apb_demuxed_1__pwdata[0]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[10]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[11]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[12]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[13]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[14]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[15]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[16]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[17]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[18]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[19]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[1]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[20]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[21]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[22]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[23]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[24]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[25]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[26]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[27]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[28]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[29]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[2]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[30]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[31]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[3]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[4]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[5]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[6]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[7]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[8]
+                         2        1      3         
+s_apb_demuxed_1__pwdata[9]
+                         2        1      3         
+s_apb_demuxed_1__pwrite
+                         3        1      4         
+s_apb_demuxed_2__paddr[0]
+                         1        1      2         
+s_apb_demuxed_2__paddr[10]
+                         1        1      2         
+s_apb_demuxed_2__paddr[11]
+                         1        1      2         
+s_apb_demuxed_2__paddr[12]
+                         1        1      2         
+s_apb_demuxed_2__paddr[13]
+                         1        1      2         
+s_apb_demuxed_2__paddr[14]
+                         1        1      2         
+s_apb_demuxed_2__paddr[15]
+                         1        1      2         
+s_apb_demuxed_2__paddr[16]
+                         1        1      2         
+s_apb_demuxed_2__paddr[17]
+                         1        1      2         
+s_apb_demuxed_2__paddr[18]
+                         1        1      2         
+s_apb_demuxed_2__paddr[19]
+                         1        1      2         
+s_apb_demuxed_2__paddr[1]
+                         1        1      2         
+s_apb_demuxed_2__paddr[20]
+                         1        1      2         
+s_apb_demuxed_2__paddr[21]
+                         1        1      2         
+s_apb_demuxed_2__paddr[22]
+                         1        1      2         
+s_apb_demuxed_2__paddr[23]
+                         1        1      2         
+s_apb_demuxed_2__paddr[24]
+                         1        1      2         
+s_apb_demuxed_2__paddr[25]
+                         1        1      2         
+s_apb_demuxed_2__paddr[26]
+                         1        1      2         
+s_apb_demuxed_2__paddr[27]
+                         1        1      2         
+s_apb_demuxed_2__paddr[28]
+                         1        1      2         
+s_apb_demuxed_2__paddr[29]
+                         1        1      2         
+s_apb_demuxed_2__paddr[2]
+                         1        1      2         
+s_apb_demuxed_2__paddr[30]
+                         1        1      2         
+s_apb_demuxed_2__paddr[31]
+                         1        1      2         
+s_apb_demuxed_2__paddr[3]
+                         1        1      2         
+s_apb_demuxed_2__paddr[4]
+                         1        1      2         
+s_apb_demuxed_2__paddr[5]
+                         1        1      2         
+s_apb_demuxed_2__paddr[6]
+                         1        1      2         
+s_apb_demuxed_2__paddr[7]
+                         1        1      2         
+s_apb_demuxed_2__paddr[8]
+                         1        1      2         
+s_apb_demuxed_2__paddr[9]
+                         1        1      2         
+s_apb_demuxed_2__penable
+                         1        1      2         
+s_apb_demuxed_2__pprot[0]
+                         0        1      1         
+s_apb_demuxed_2__pprot[1]
+                         0        1      1         
+s_apb_demuxed_2__pprot[2]
+                         0        1      1         
+s_apb_demuxed_2__prdata[0]
+                         1        1      2         
+s_apb_demuxed_2__prdata[10]
+                         1        1      2         
+s_apb_demuxed_2__prdata[11]
+                         1        1      2         
+s_apb_demuxed_2__prdata[12]
+                         1        1      2         
+s_apb_demuxed_2__prdata[13]
+                         1        1      2         
+s_apb_demuxed_2__prdata[14]
+                         1        1      2         
+s_apb_demuxed_2__prdata[15]
+                         1        1      2         
+s_apb_demuxed_2__prdata[16]
+                         1        1      2         
+s_apb_demuxed_2__prdata[17]
+                         1        1      2         
+s_apb_demuxed_2__prdata[18]
+                         1        1      2         
+s_apb_demuxed_2__prdata[19]
+                         1        1      2         
+s_apb_demuxed_2__prdata[1]
+                         1        1      2         
+s_apb_demuxed_2__prdata[20]
+                         1        1      2         
+s_apb_demuxed_2__prdata[21]
+                         1        1      2         
+s_apb_demuxed_2__prdata[22]
+                         1        1      2         
+s_apb_demuxed_2__prdata[23]
+                         1        1      2         
+s_apb_demuxed_2__prdata[24]
+                         1        1      2         
+s_apb_demuxed_2__prdata[25]
+                         1        1      2         
+s_apb_demuxed_2__prdata[26]
+                         1        1      2         
+s_apb_demuxed_2__prdata[27]
+                         1        1      2         
+s_apb_demuxed_2__prdata[28]
+                         1        1      2         
+s_apb_demuxed_2__prdata[29]
+                         1        1      2         
+s_apb_demuxed_2__prdata[2]
+                         1        1      2         
+s_apb_demuxed_2__prdata[30]
+                         1        1      2         
+s_apb_demuxed_2__prdata[31]
+                         1        1      2         
+s_apb_demuxed_2__prdata[3]
+                         1        1      2         
+s_apb_demuxed_2__prdata[4]
+                         1        1      2         
+s_apb_demuxed_2__prdata[5]
+                         1        1      2         
+s_apb_demuxed_2__prdata[6]
+                         1        1      2         
+s_apb_demuxed_2__prdata[7]
+                         1        1      2         
+s_apb_demuxed_2__prdata[8]
+                         1        1      2         
+s_apb_demuxed_2__prdata[9]
+                         1        1      2         
+s_apb_demuxed_2__pready
+                         1        1      2         
+s_apb_demuxed_2__psel
+                         1        1      2         
+s_apb_demuxed_2__pslverr
+                         1        1      2         
+s_apb_demuxed_2__pstrb[0]
+                         0        1      1         
+s_apb_demuxed_2__pstrb[1]
+                         0        1      1         
+s_apb_demuxed_2__pstrb[2]
+                         0        1      1         
+s_apb_demuxed_2__pstrb[3]
+                         0        1      1         
+s_apb_demuxed_2__pwdata[0]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[10]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[11]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[12]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[13]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[14]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[15]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[16]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[17]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[18]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[19]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[1]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[20]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[21]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[22]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[23]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[24]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[25]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[26]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[27]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[28]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[29]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[2]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[30]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[31]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[3]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[4]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[5]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[6]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[7]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[8]
+                         1        1      2         
+s_apb_demuxed_2__pwdata[9]
+                         1        1      2         
+s_apb_demuxed_2__pwrite
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[0]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[10]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[11]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[12]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[13]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[14]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[15]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[16]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[17]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[18]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[19]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[1]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[20]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[21]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[22]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[23]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[24]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[25]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[26]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[27]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[28]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[29]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[2]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[30]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[31]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[3]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[4]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[5]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[6]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[7]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[8]
+                         1        1      2         
+s_apb_fll_ctrl_bus_prdata[9]
+                         1        1      2         
+s_apb_fll_ctrl_bus_pready
+                         1        1      2         
+s_bootsel[0]             1        1      2         
+s_bootsel[1]             1        1      2         
+s_global_rst_n          18        1     19         
+s_gpio_in[0]             1        1      2         
+s_gpio_in[10]            1        1      2         
+s_gpio_in[11]            1        1      2         
+s_gpio_in[12]            1        1      2         
+s_gpio_in[13]            1        1      2         
+s_gpio_in[14]            1        1      2         
+s_gpio_in[15]            1        1      2         
+s_gpio_in[16]            1        1      2         
+s_gpio_in[17]            1        1      2         
+s_gpio_in[18]            1        1      2         
+s_gpio_in[19]            1        1      2         
+s_gpio_in[1]             1        1      2         
+s_gpio_in[20]            1        1      2         
+s_gpio_in[21]            1        1      2         
+s_gpio_in[22]            1        1      2         
+s_gpio_in[23]            1        1      2         
+s_gpio_in[24]            1        1      2         
+s_gpio_in[25]            1        1      2         
+s_gpio_in[26]            1        1      2         
+s_gpio_in[27]            1        1      2         
+s_gpio_in[28]            1        1      2         
+s_gpio_in[29]            1        1      2         
+s_gpio_in[2]             1        1      2         
+s_gpio_in[30]            1        1      2         
+s_gpio_in[31]            1        1      2         
+s_gpio_in[3]             1        1      2         
+s_gpio_in[4]             1        1      2         
+s_gpio_in[5]             1        1      2         
+s_gpio_in[6]             1        1      2         
+s_gpio_in[7]             1        1      2         
+s_gpio_in[8]             1        1      2         
+s_gpio_in[9]             1        1      2         
+s_gpio_out[0]            4        1      5         
+s_gpio_out[10]           4        1      5         
+s_gpio_out[11]           4        1      5         
+s_gpio_out[12]           4        1      5         
+s_gpio_out[13]           4        1      5         
+s_gpio_out[14]           4        1      5         
+s_gpio_out[15]           4        1      5         
+s_gpio_out[16]           4        1      5         
+s_gpio_out[17]           4        1      5         
+s_gpio_out[18]           4        1      5         
+s_gpio_out[19]           4        1      5         
+s_gpio_out[1]            4        1      5         
+s_gpio_out[20]           4        1      5         
+s_gpio_out[21]           4        1      5         
+s_gpio_out[22]           4        1      5         
+s_gpio_out[23]           4        1      5         
+s_gpio_out[24]           4        1      5         
+s_gpio_out[25]           4        1      5         
+s_gpio_out[26]           4        1      5         
+s_gpio_out[27]           4        1      5         
+s_gpio_out[28]           4        1      5         
+s_gpio_out[29]           4        1      5         
+s_gpio_out[2]            4        1      5         
+s_gpio_out[30]           4        1      5         
+s_gpio_out[31]           4        1      5         
+s_gpio_out[3]            4        1      5         
+s_gpio_out[4]            4        1      5         
+s_gpio_out[5]            4        1      5         
+s_gpio_out[6]            4        1      5         
+s_gpio_out[7]            4        1      5         
+s_gpio_out[8]            4        1      5         
+s_gpio_out[9]            4        1      5         
+s_gpio_tx_en[0]          2        1      3         
+s_gpio_tx_en[10]         2        1      3         
+s_gpio_tx_en[11]         2        1      3         
+s_gpio_tx_en[12]         2        1      3         
+s_gpio_tx_en[13]         2        1      3         
+s_gpio_tx_en[14]         2        1      3         
+s_gpio_tx_en[15]         2        1      3         
+s_gpio_tx_en[16]         2        1      3         
+s_gpio_tx_en[17]         2        1      3         
+s_gpio_tx_en[18]         2        1      3         
+s_gpio_tx_en[19]         2        1      3         
+s_gpio_tx_en[1]          2        1      3         
+s_gpio_tx_en[20]         2        1      3         
+s_gpio_tx_en[21]         2        1      3         
+s_gpio_tx_en[22]         2        1      3         
+s_gpio_tx_en[23]         2        1      3         
+s_gpio_tx_en[24]         2        1      3         
+s_gpio_tx_en[25]         2        1      3         
+s_gpio_tx_en[26]         2        1      3         
+s_gpio_tx_en[27]         2        1      3         
+s_gpio_tx_en[28]         2        1      3         
+s_gpio_tx_en[29]         2        1      3         
+s_gpio_tx_en[2]          2        1      3         
+s_gpio_tx_en[30]         2        1      3         
+s_gpio_tx_en[31]         2        1      3         
+s_gpio_tx_en[3]          2        1      3         
+s_gpio_tx_en[4]          2        1      3         
+s_gpio_tx_en[5]          2        1      3         
+s_gpio_tx_en[6]          2        1      3         
+s_gpio_tx_en[7]          2        1      3         
+s_gpio_tx_en[8]          2        1      3         
+s_gpio_tx_en[9]          2        1      3         
+s_hyper_to_pad_0__hyper_ck_no_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_ck_o_
+                         2        1      3         
+s_hyper_to_pad_0__hyper_cs0_no_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_cs1_no_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq0_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq1_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq2_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq3_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq4_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq5_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq6_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq7_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_dq_oe_
+                         2        1      3         
+s_hyper_to_pad_0__hyper_reset_no_
+                        20        1     21         
+s_hyper_to_pad_0__hyper_rwds_o_
+                         1        1      2         
+s_hyper_to_pad_0__hyper_rwds_oe_
+                         2        1      3         
+s_i2c_to_pad_0__scl_oe_
+                         0        1      1         
+s_i2c_to_pad_0__sda_oe_
+                         0        1      1         
+s_jtag_global_clk_byp_en
+                         2        1      3         
+s_jtag_tck             728        2    729         
+s_jtag_tdi               4        1      5         
+s_jtag_tdo               1        1      2         
+s_jtag_tms               9        1     10         
+s_jtag_trst_n           95        1     96         
+s_pad_global_clk_byp_en
+                         1        1      2         
+s_pad_to_cpi_0__data0_i_
+                         6        1      7         
+s_pad_to_cpi_0__data1_i_
+                         6        1      7         
+s_pad_to_cpi_0__data2_i_
+                         6        1      7         
+s_pad_to_cpi_0__data3_i_
+                         6        1      7         
+s_pad_to_cpi_0__data4_i_
+                         6        1      7         
+s_pad_to_cpi_0__data5_i_
+                         7        1      8         
+s_pad_to_cpi_0__data6_i_
+                         7        1      8         
+s_pad_to_cpi_0__data7_i_
+                         7        1      8         
+s_pad_to_cpi_0__data8_i_
+                         2        1      3         
+s_pad_to_cpi_0__data9_i_
+                         2        1      3         
+s_pad_to_cpi_0__hsync_i_
+                         3        1      4         
+s_pad_to_cpi_0__pclk_i_
+                       418        1    419         
+s_pad_to_cpi_0__vsync_i_
+                         1        1      2         
+s_pad_to_hyper_0__hyper_dq0_i_
+                        17        1     18         
+s_pad_to_hyper_0__hyper_dq1_i_
+                        17        1     18         
+s_pad_to_hyper_0__hyper_dq2_i_
+                        17        1     18         
+s_pad_to_hyper_0__hyper_dq3_i_
+                        17        1     18         
+s_pad_to_hyper_0__hyper_dq4_i_
+                        17        1     18         
+s_pad_to_hyper_0__hyper_dq5_i_
+                        17        1     18         
+s_pad_to_hyper_0__hyper_dq6_i_
+                        17        1     18         
+s_pad_to_hyper_0__hyper_dq7_i_
+                        17        1     18         
+s_pad_to_hyper_0__hyper_rwds_i_
+                        33        1     34         
+s_pad_to_i2c_0__scl_i_
+                         1        1      2         
+s_pad_to_i2c_0__sda_i_
+                         1        1      2         
+s_pad_to_i2s_0__master_sck_in_
+                         0        1      1         
+s_pad_to_i2s_0__master_ws_in_
+                         0        1      1         
+s_pad_to_i2s_0__slave_sck_in_
+                         0        1      1         
+s_pad_to_i2s_0__slave_sd0_in_
+                         0        1      1         
+s_pad_to_i2s_0__slave_sd1_in_
+                         0        1      1         
+s_pad_to_i2s_0__slave_ws_in_
+                         0        1      1         
+s_pad_to_qspi_0__sd0_i_
+                         4        1      5         
+s_pad_to_qspi_0__sd1_i_
+                         2        1      3         
+s_pad_to_qspi_0__sd2_i_
+                         1        1      2         
+s_pad_to_qspi_0__sd3_i_
+                         1        1      2         
+s_pad_to_sdio_0__sdcmd_in_
+                         6        1      7         
+s_pad_to_sdio_0__sddata_in__0_
+                        11        1     12         
+s_pad_to_sdio_0__sddata_in__1_
+                         4        1      5         
+s_pad_to_sdio_0__sddata_in__2_
+                         4        1      5         
+s_pad_to_sdio_0__sddata_in__3_
+                         4        1      5         
+s_pad_to_uart_0__rx_i_
+                         1        1      2         
+s_per_clk               36        1     37         
+s_per_rstn_synced        0        1      1         
+s_qspi_to_pad_0__csn0_o_
+                         2        1      3         
+s_qspi_to_pad_0__csn1_o_
+                         2        1      3         
+s_qspi_to_pad_0__csn2_o_
+                         2        1      3         
+s_qspi_to_pad_0__csn3_o_
+                         2        1      3         
+s_qspi_to_pad_0__sck_o_
+                         1        1      2         
+s_qspi_to_pad_0__sd0_o_
+                         1        1      2         
+s_qspi_to_pad_0__sd0_oe_
+                         4        1      5         
+s_qspi_to_pad_0__sd1_o_
+                         2        1      3         
+s_qspi_to_pad_0__sd1_oe_
+                         5        1      6         
+s_qspi_to_pad_0__sd2_o_
+                         2        1      3         
+s_qspi_to_pad_0__sd2_oe_
+                         3        1      4         
+s_qspi_to_pad_0__sd3_o_
+                         2        1      3         
+s_qspi_to_pad_0__sd3_oe_
+                         4        1      5         
+s_ref_clk               94        1     95         
+s_sdio_to_pad_0__sdclk_out_
+                        32        1     33         
+s_sdio_to_pad_0__sdcmd_oen_
+                         4        1      5         
+s_sdio_to_pad_0__sdcmd_out_
+                         1        1      2         
+s_sdio_to_pad_0__sddata_oen__0_
+                         4        1      5         
+s_sdio_to_pad_0__sddata_oen__1_
+                         5        1      6         
+s_sdio_to_pad_0__sddata_oen__2_
+                         5        1      6         
+s_sdio_to_pad_0__sddata_oen__3_
+                         4        1      5         
+s_sdio_to_pad_0__sddata_out__0_
+                         1        1      2         
+s_sdio_to_pad_0__sddata_out__1_
+                         1        1      2         
+s_sdio_to_pad_0__sddata_out__2_
+                         1        1      2         
+s_sdio_to_pad_0__sddata_out__3_
+                         1        1      2         
+s_slow_clk              11        1     12         
+s_slow_clk_rstn_synced
+                         0        1      1         
+s_soc_clk            14559        1   14560        
+s_soc_rstn_synced        2        1      3         
+s_timer_ch0[0]          10        1     11         
+s_timer_ch0[1]          10        1     11         
+s_timer_ch0[2]          10        1     11         
+s_timer_ch0[3]          10        1     11         
+s_timer_ch1[0]          10        1     11         
+s_timer_ch1[1]          10        1     11         
+s_timer_ch1[2]          10        1     11         
+s_timer_ch1[3]          10        1     11         
+s_timer_ch2[0]          10        1     11         
+s_timer_ch2[1]          10        1     11         
+s_timer_ch2[2]          10        1     11         
+s_timer_ch2[3]          10        1     11         
+s_timer_ch3[0]          10        1     11         
+s_timer_ch3[1]          10        1     11         
+s_timer_ch3[2]          10        1     11         
+s_timer_ch3[3]          10        1     11         
+s_uart_to_pad_0__tx_o_
+                         3        1      4         
+
+Attributes
+    d - user dont_touch
+    D - derived dont_touch
+
+--------------------------------------------------------------------------------
+Total 703 nets       18844      755   19542
+Maximum              14559        2   14560
+Average              26.81     1.07   27.80
+1

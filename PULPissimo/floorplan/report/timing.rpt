@@ -1,0 +1,991 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Sep 29 17:28:16 2025
+****************************************
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__0_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U204/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__0_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__1_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U203/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__1_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__2_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U201/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__2_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__3_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U200/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__3_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__4_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U199/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__4_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__5_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U198/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__5_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__6_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U197/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__6_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__7_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U196/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__7_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__8_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U195/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__8_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__9_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U194/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__9_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__10_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U193/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__10_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__11_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U192/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__11_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__12_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U190/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__12_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__13_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U189/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__13_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__14_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U188/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__14_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__15_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U187/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__15_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__16_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U186/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__16_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__17_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U185/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__17_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__18_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U184/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__18_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+
+  Startpoint: i_clock_gen (internal path startpoint clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__19_ (positive level-sensitive latch clocked by soc_clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock soc_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                   0.00      0.00 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X4_RVT)
+                                                 1557.86   1557.86 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                   0.67    1558.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate_14__clock_gate_i/U3/Y (AND2X1_RVT)
+                                                   0.08    1558.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                   0.18    1558.78 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/U183/Y (AO22X1_RVT)
+                                                   0.13    1558.91 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/register_file_i/mem_reg_14__19_/D (LATCHX1_RVT)
+                                                   0.00    1558.91 r
+  data arrival time                                        1558.91
+
+  clock soc_clk(rise edge)                         0.00      0.00
+  clock latency (ideal)                            0.00      0.00
+  clock uncertainty                               -0.20     -0.20
+  transparency open edge                                    -0.20
+
+  clock soc_clk(fall edge)                        10.50     10.50
+  clock network delay (ideal)                      0.00     10.50
+  clock uncertainty                               -0.20     10.30
+  library setup time                              -0.05     10.25
+  transparency close edge                                   10.25
+
+  data required time                                        10.25
+  ------------------------------------------------------------------------
+  data required time                                        10.25
+  data arrival time                                        -1558.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -1548.66
+
+
+1

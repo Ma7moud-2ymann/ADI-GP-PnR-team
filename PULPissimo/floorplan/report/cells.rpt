@@ -1,0 +1,43 @@
+****************************************
+Report : cell
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Sep 29 17:28:13 2025
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model
+    U - Unbound (missing)
+    s - user size_only
+    S - implicit size_only
+    d - user dont_touch
+    D - derived dont_touch
+    o - synthetic operator
+
+
+Cell                      Reference       Library          Attributes
+--------------------------------------------------------------------------------
+U3                        OR2X1_RVT       saed32rvt_ss0p95vn40c
+i_apb_demux_addr_decode   addr_decode_00000003_00000002    h
+i_clock_gen               clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                                                           h
+i_demux                   apb_demux_intf_32_32_00000003_I_slv_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_mst_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                           h
+i_err_slv                 apb_err_slv_intf_APB_ADDR_WIDTH32_APB_DATA_WIDTH32_I_slv_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                           h
+i_padframe                padframe_adapter_I_apb_cfg_slave_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                           h
+i_rstgen_per_clk          rstgen_1                         h
+i_rstgen_slow_clk         rstgen_0                         h
+i_rstgen_soc_clk          rstgen_2                         h
+i_soc_domain              soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                           h
+--------------------------------------------------------------------------------
+Total 10 cells
+
+1

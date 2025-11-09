@@ -1,0 +1,24 @@
+****************************************
+Report : report_utilization
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Sep 29 17:28:16 2025
+****************************************
+Utilization Ratio:			0.1087
+Utilization options:
+ - Area calculation based on:		site_row of block pulpissimo_fp
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				7421374.3254
+Total Capacity Area:			7421374.3254
+Total Area of cells:			806543.2658
+Area of excluded objects:
+ - hard_macros         :		3672537.3527
+ - macro_keepouts      :		398044.3991
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.1087
+
+0.1087
