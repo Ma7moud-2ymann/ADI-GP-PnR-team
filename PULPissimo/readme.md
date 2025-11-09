@@ -7,5 +7,12 @@ PULPissimo is a popular, open-source microcontroller platform from the PULP (Par
 
 The repository is structured to provide a step-by-step guide, with scripts and configuration files for each stage of the ASIC design process.
 
+## Routing stage  <!-- H2 -->
+![WhatsApp Image 2025-11-09 at 15 48 47_1157ba22](https://github.com/user-attachments/assets/d9329edf-3345-4d81-9e65-66bccf4949e7)
+
+
+## Finishing  <!-- H2 -->
+
+
 ![WhatsApp Image 2025-11-09 at 15 50 54_97c2cc20](https://github.com/user-attachments/assets/d4e01053-c4b4-471b-a5df-c7d74fc2c52e)
 
