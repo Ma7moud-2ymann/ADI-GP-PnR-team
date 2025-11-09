@@ -1,0 +1,17 @@
+<Database>
+Name/home/ICer/Desktop/pulp/ndm/check_workspace.ems
+Creation TimeTue Sep  2 15:28:53 2025
+Modified TimeTue Sep  2 15:28:54 2025
+Design Name
+Library Name
+</Database>
+<RuleCount>
+LM-0051
+LM-0341
+</RuleCount>
+<UserDefinedRules>
+</UserDefinedRules>
+<Messages>
+LM-005
+LM-034para1110para210para31 with a design view (1 had ports reordered);10
+</Messages>
