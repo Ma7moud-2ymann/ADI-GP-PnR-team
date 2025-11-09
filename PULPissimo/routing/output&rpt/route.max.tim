@@ -1,0 +1,149 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Tue Sep 30 03:55:07 2025
+****************************************
+
+  Startpoint: i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/pointer_out_reg_0_ (rising edge-triggered flip-flop clocked by per_per_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/r_spi_mode_reg_0_ (falling edge-triggered flip-flop clocked by per_per_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: per_per_clk
+  Path Type: max
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock per_per_clk (rise edge)                                                0.00      0.00
+  clock network delay (ideal)                                                  0.10      0.10
+
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/pointer_out_reg_0_/CLK (DFFARX1_RVT)
+                                                                     0.05      0.00      0.10 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/pointer_out_reg_0_/Q (DFFARX1_RVT)
+                                                                     0.07      0.23      0.33 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/pointer_out[0] (net)
+                                                    6      6.01
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/U363/A2 (NAND2X4_RVT)
+                                                                     0.07      0.00      0.33 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/U363/Y (NAND2X4_RVT)
+                                                                     0.09      0.16      0.49 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/n233 (net)
+                                                   22     31.18
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/U289/A4 (OA222X1_RVT)
+                                                                     0.09      0.00      0.49 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/U289/Y (OA222X1_RVT)
+                                                                     0.05      0.14      0.63 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/n284 (net)
+                                                    1      2.21
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/U288/A2 (NAND2X0_RVT)
+                                                                     0.05      0.00      0.63 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/U288/Y (NAND2X0_RVT)
+                                                                     0.08      0.08      0.71 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/i_reply_buffer/data_o[31] (net)
+                                                    1      2.51
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U488/A1 (AO22X2_RVT)
+                                                                     0.08      0.00      0.71 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U488/Y (AO22X2_RVT)
+                                                                     0.09      0.17      0.88 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/placeHFSNET_6636 (net)
+                                                    9     16.05
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/placeHFSINV_800_6029/A (INVX0_RVT)
+                                                                     0.09      0.00      0.88 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/placeHFSINV_800_6029/Y (INVX0_RVT)
+                                                                     0.08      0.09      0.98 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/placeHFSNET_6634 (net)
+                                                    4      4.02
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U400/A2 (AND2X1_RVT)
+                                                                     0.08      0.00      0.98 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U400/Y (AND2X1_RVT)
+                                                                     0.05      0.10      1.08 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/n159 (net)
+                                                    4      3.99
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U396/A3 (NAND3X0_RVT)
+                                                                     0.05      0.00      1.08 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U396/Y (NAND3X0_RVT)
+                                                                     0.18      0.15      1.23 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/n152 (net)
+                                                    3      4.78
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U298/A2 (NAND2X0_RVT)
+                                                                     0.18      0.00      1.23 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U298/Y (NAND2X0_RVT)
+                                                                     0.14      0.18      1.41 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/n121 (net)
+                                                    3      3.60
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U10/A1 (OA21X1_RVT)
+                                                                     0.14      0.00      1.41 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U10/Y (OA21X1_RVT)
+                                                                     0.04      0.13      1.54 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/n94 (net)
+                                                    2      1.68
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U249/A1 (OR2X2_RVT)
+                                                                     0.04      0.00      1.54 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/U249/Y (OR2X2_RVT)
+                                                                     0.07      0.10      1.65 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_spictrl/rx_start_o (net)
+                                                    9     11.70
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/placeHFSINV_286_5048/A (INVX0_RVT)
+                                                                     0.07      0.00      1.65 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/placeHFSINV_286_5048/Y (INVX0_RVT)
+                                                                     0.09      0.09      1.73 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/placeHFSNET_5655 (net)
+                                                    4      6.10
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/U795/A2 (NAND2X0_RVT)
+                                                                     0.09      0.00      1.73 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/U795/Y (NAND2X0_RVT)
+                                                                     0.07      0.10      1.83 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/n71 (net)
+                                                    2      1.52
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/placeHFSBUF_247_2805/A (DELLN1X2_RVT)
+                                                                     0.07      0.00      1.83 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/placeHFSBUF_247_2805/Y (DELLN1X2_RVT)
+                                                                     0.05      0.28      2.11 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/placeHFSNET_3162 (net)
+                                                    6      7.20
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/U16/A2 (NAND2X0_RVT)
+                                                                     0.05      0.00      2.11 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/U16/Y (NAND2X0_RVT)
+                                                                     0.06      0.07      2.18 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/n69 (net)
+                                                    1      1.71
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/U118/A1 (MUX21X1_RVT)
+                                                                     0.06      0.00      2.18 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/U118/Y (MUX21X1_RVT)
+                                                                     0.09      0.17      2.35 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/s_spi_mode[0] (net)
+                                                    2      7.85
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/placeHFSBUF_150_1433/A (DELLN1X2_RVT)
+                                                                     0.09      0.00      2.35 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/placeHFSBUF_150_1433/Y (DELLN1X2_RVT)
+                                                                     0.06      0.32      2.66 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/placeHFSNET_1442 (net)
+                                                    1     12.05
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/r_spi_mode_reg_0_/D (DFFNARX1_RVT)
+                                                                     0.07      0.00      2.67 f
+  data arrival time                                                                      2.67
+
+  clock per_per_clk (fall edge)                                                3.00      3.00
+  clock network delay (ideal)                                                  0.00      3.00
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/qspi_0__i_udma_qspi_wrap/i_udma_spim_top/u_txrx/r_spi_mode_reg_0_/CLK (DFFNARX1_RVT)
+                                                                     0.05      0.00      3.00 f
+  clock uncertainty                                                           -0.20      2.80
+  library setup time                                                          -0.09      2.71
+  data required time                                                                     2.71
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     2.71
+  data arrival time                                                                     -2.67
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.05
+
+
+1
