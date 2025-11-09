@@ -1,0 +1,1037 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Thu Oct  2 06:56:01 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p95vn40c   Library: saed32rvt_ss0p95vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][9]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U194/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][9]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][9]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][8]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U195/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][8]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][8]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][7]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U196/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][7]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][7]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][6]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U197/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][6]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][6]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][5]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U198/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][5]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][5]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][4]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U199/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][4]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][4]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][3]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U200/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][3]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][3]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][2]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U201/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][2]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][2]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][1]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U203/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][1]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][1]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+  Startpoint: i_clock_gen/ref_clk_i
+              (clock source 'ref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][0]
+            (positive level-sensitive latch clocked by ref_clk)
+  Path Group: ref_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pulpissimo         8000000               saed32rvt_ss0p95vn40c
+  clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                     16000                 saed32rvt_ss0p95vn40c
+  cv32e40p_core_1_0_1_1_1
+                     140000                saed32rvt_ss0p95vn40c
+  cv32e40p_register_file_6_32_1_1
+                     16000                 saed32rvt_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock source latency                                    0.00       0.00 r
+  i_clock_gen/ref_clk_i (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk1_i (tc_clk_mux2_2)
+                                                          0.00       0.00 r
+  i_clock_gen/i_fll_soc_bypass_mux/U1/Y (MUX21X1_RVT)     0.08       0.08 r
+  i_clock_gen/i_fll_soc_bypass_mux/clk_o (tc_clk_mux2_2)
+                                                          0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/clk_i (tc_clk_gating_1_1)      0.00       0.08 r
+  i_clock_gen/i_soc_clk_en/U3/Y (AND2X1_RVT)              6.44 #     6.53 r
+  i_clock_gen/i_soc_clk_en/clk_o (tc_clk_gating_1_1)      0.00 #     6.53 r
+  i_clock_gen/soc_clk_o (clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/soc_clk_i (soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/soc_clk_i (pulp_soc_00000000_1_1_1_0_0_32_64_32_6_6_3_8_8)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/clk_i (fc_subsystem_00000000_1_1_1_0_4_0_1f_I_l2_data_master_XBAR_TCDM_BUS__I_l2_instr_master_XBAR_TCDM_BUS__I_l2_hwpe_master_XBAR_TCDM_BUS__I_apb_slave_eu_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_apb_slave_hwpe_APB__ADDR_WIDTH_32_DATA_WIDTH_32)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/clk_i (cv32e40p_core_1_0_1_1_1)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_ungated_i (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_i (cv32e40p_clock_gate_0)
+                                                          0.00 #     6.53 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          5.90 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/core_clock_gate_i/clk_o (cv32e40p_clock_gate_0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/sleep_unit_i/clk_gated_o (cv32e40p_sleep_unit_PULP_CLUSTER0)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/clk (cv32e40p_id_stage_1_0_2_0_0_0_1_1_1_3_6_15_5_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/clk (cv32e40p_register_file_6_32_1_1)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_i (cv32e40p_clock_gate_32)
+                                                          0.00 #    12.43 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/U3/Y (AND2X1_RVT)
+                                                          0.73 #    13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/CG_WE_GLOBAL/clk_o (cv32e40p_clock_gate_32)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_i (cv32e40p_clock_gate_18)
+                                                          0.00      13.16 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/U3/Y (AND2X1_RVT)
+                                                          0.08      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/gen_clock_gate[14].clock_gate_i/clk_o (cv32e40p_clock_gate_18)
+                                                          0.00      13.23 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U207/Y (AND3X1_RVT)
+                                                          0.18      13.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/U204/Y (AO22X1_RVT)
+                                                          0.13      13.55 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][0]/D (LATCHX1_RVT)
+                                                          0.00      13.55 r
+  data arrival time                                                 13.55
+
+  clock ref_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.10       0.10
+  clock uncertainty                                      -0.20      -0.10
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE.FC_CORE_i/id_stage_i/register_file_i/mem_reg[14][0]/CLK (LATCHX1_RVT)
+                                                          0.00      -0.10 r
+  time borrowed from endpoint                             3.45       3.35
+  data required time                                                 3.35
+  --------------------------------------------------------------------------
+  data required time                                                 3.35
+  data arrival time                                                -13.55
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.20
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  ref_clk nominal pulse width                             3.50   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         3.45   
+  --------------------------------------------------------------
+  actual time borrow                                      3.45   
+  clock uncertainty                                      -0.20   
+  --------------------------------------------------------------
+  time given to startpoint                                3.25   
+  --------------------------------------------------------------
+
+
+1

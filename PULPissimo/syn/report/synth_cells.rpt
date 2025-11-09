@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : cell
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Thu Oct  2 06:55:59 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U3                        OR2X1_RVT       saed32rvt_ss0p95vn40c
+                                                          2.033152  
+i_apb_demux_addr_decode   addr_decode_00000003_00000002   607.404151
+                                                                    h, p
+i_clock_gen               clock_gen_APB_ADDR_WIDTH6_I_cfg_bus_slave_APB__ADDR_WIDTH_6_DATA_WIDTH_32
+                                                          8393.868124
+                                                                    h, n, p
+i_demux                   apb_demux_intf_32_32_00000003_I_slv_APB__ADDR_WIDTH_32_DATA_WIDTH_32I_mst_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                          564.453842
+                                                                    h, p
+i_err_slv                 apb_err_slv_intf_APB_ADDR_WIDTH32_APB_DATA_WIDTH32_I_slv_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                          85.900672 h, p
+i_padframe                padframe_adapter_I_apb_cfg_slave_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                          25998.423102
+                                                                    h, n, p
+i_rstgen_per_clk          rstgen_1                        39.900609 h, n
+i_rstgen_slow_clk         rstgen_0                        39.900609 h, n
+i_rstgen_soc_clk          rstgen_2                        39.900609 h, n
+i_soc_domain              soc_domain_00000000_1_1_1_0_0_I_apb_chip_ctrl_master_APB__ADDR_WIDTH_32_DATA_WIDTH_32
+                                                          4442317.957091
+                                                                    b, h, n, p
+--------------------------------------------------------------------------------
+Total 10 cells                                            4478089.741960
+1

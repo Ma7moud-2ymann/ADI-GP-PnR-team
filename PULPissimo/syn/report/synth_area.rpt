@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : area
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Thu Oct  2 06:55:38 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'pulpissimo' contains 12 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed32rvt_ss0p95vn40c (File: /home/ICer/Desktop/pulp/libraries/SAED32/STD/saed32rvt_ss0p95vn40c.db)
+    saed32sram_ss0p95vn40c (File: /home/ICer/Desktop/pulp/libraries/SAED32/SRAM/saed32sram_ss0p95vn40c.db)
+
+Number of ports:                       359502
+Number of nets:                        654649
+Number of cells:                       312403
+Number of combinational cells:         262933
+Number of sequential cells:             45773
+Number of macros/black boxes:              72
+Number of buf/inv:                      83641
+Number of references:                      10
+
+Combinational area:             588703.486827
+Buf/Inv area:                   132218.927958
+Noncombinational area:          241313.036383
+Macro/Black Box area:          3648073.218750
+Net Interconnect area:          714642.186716
+
+Total cell area:               4478089.741960
+Total area:                    5192731.928675
+1
