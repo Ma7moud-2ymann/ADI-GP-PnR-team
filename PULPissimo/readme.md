@@ -15,7 +15,5 @@ The repository is structured to provide a step-by-step guide, with scripts and c
 
 
 ![WhatsApp Image 2025-11-09 at 15 50 54_97c2cc20](https://github.com/user-attachments/assets/d4e01053-c4b4-471b-a5df-c7d74fc2c52e)
-
-
-![Uploading WhatsApp Image 2025-11-09 at 15.50.01_a83e6561.jpg…]()
+![WhatsApp Image 2025-11-09 at 15 50 01_a14831e2](https://github.com/user-attachments/assets/c1909a5b-5f6a-42ea-8701-6a568551ece7)
 
