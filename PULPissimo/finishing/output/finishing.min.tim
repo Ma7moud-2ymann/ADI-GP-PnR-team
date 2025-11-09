@@ -1,0 +1,53 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Oct  6 03:37:26 2025
+****************************************
+
+  Startpoint: i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_0__i_clk_gate_per/i_clk_gate/i_tc_clk_gating/clk_en_reg (positive level-sensitive latch clocked by pref_clk')
+  Endpoint: i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_0__i_clk_gate_per/i_clk_gate/i_tc_clk_gating/U3 (falling clock gating-check end-point clocked by pref_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: pref_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock pref_clk' (rise edge)                                                  3.00      3.00
+  clock network delay (ideal)                                                  0.00      3.00
+
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_0__i_clk_gate_per/i_clk_gate/i_tc_clk_gating/clk_en_reg/CLK (LATCHX1_RVT)
+                                                                     0.05      0.00      3.00 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_0__i_clk_gate_per/i_clk_gate/i_tc_clk_gating/clk_en_reg/Q (LATCHX1_RVT)
+                                                                     0.04      0.11      3.11 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_0__i_clk_gate_per/i_clk_gate/i_tc_clk_gating/clk_en (net)
+                                                    1      0.73
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_0__i_clk_gate_per/i_clk_gate/i_tc_clk_gating/U3/A1 (AND2X1_RVT)
+                                                                     0.04      0.00      3.11 f
+  data arrival time                                                                      3.11
+
+  clock pref_clk (fall edge)                                                   3.00      3.00
+  clock network delay (ideal)                                                  0.10      3.10
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_pulp_io/i_udma_subsystem/i_udmacore/genblk1_0__i_clk_gate_per/i_clk_gate/i_tc_clk_gating/U3/A2 (AND2X1_RVT)
+                                                                     0.05      0.00      3.10 f
+  clock uncertainty                                                            0.02      3.12
+  library hold time                                                            0.00      3.12
+  data required time                                                                     3.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     3.12
+  data arrival time                                                                     -3.11
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.01
+
+
+1

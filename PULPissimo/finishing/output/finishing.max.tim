@@ -1,0 +1,1217 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Oct  6 03:37:26 2025
+****************************************
+
+  Startpoint: i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/gen_spill_reg_b_full_q_reg (rising edge-triggered flip-flop clocked by soc_clk)
+  Endpoint: i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/hwlp_counter_q_reg_0__28_ (rising edge-triggered flip-flop clocked by soc_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: soc_clk
+  Path Type: max
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock soc_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.10      0.10
+
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/gen_spill_reg_b_full_q_reg/CLK (DFFARX1_RVT)
+                                                                     0.05      0.00      0.10 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/gen_spill_reg_b_full_q_reg/Q (DFFARX1_RVT)
+                                                                     0.08      0.25      0.35 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/n15 (net)
+                                                    5      6.90
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/placeHFSINV_2005_11394/A (INVX2_RVT)
+                                                                     0.08      0.00      0.35 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/placeHFSINV_2005_11394/Y (INVX2_RVT)
+                                                                     0.08      0.08      0.43 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/placeHFSNET_11354 (net)
+                                                   13     14.32
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/U269/A1 (AO22X1_RVT)
+                                                                     0.08      0.00      0.43 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/U269/Y (AO22X1_RVT)
+                                                                     0.04      0.12      0.56 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_i_aw_spill_reg/spill_register_flushable_i/data_o_id__0_ (net)
+                                                    1      2.34
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/placeZBUF_inst_16837/A (NBUFFX8_RVT)
+                                                                     0.04      0.00      0.56 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/placeZBUF_inst_16837/Y (NBUFFX8_RVT)
+                                                                     0.07      0.08      0.64 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/placeZBUF_2 (net)
+                                                   12     49.18
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/placeHFSINV_1253_11382/A (INVX1_RVT)
+                                                                     0.08      0.02      0.66 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/placeHFSINV_1253_11382/Y (INVX1_RVT)
+                                                                     0.07      0.08      0.74 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/placeHFSNET_11343 (net)
+                                                    4      5.06
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U98/A2 (AND2X2_RVT)
+                                                                     0.07      0.00      0.74 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U98/Y (AND2X2_RVT)
+                                                                     0.08      0.13      0.87 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/n36 (net)
+                                                    7     12.95
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/placeHFSBUF_493_11368/A (NBUFFX4_RVT)
+                                                                     0.08      0.00      0.87 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/placeHFSBUF_493_11368/Y (NBUFFX4_RVT)
+                                                                     0.07      0.10      0.97 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/placeHFSNET_11332 (net)
+                                                   10     20.23
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U384/A4 (AO22X1_RVT)
+                                                                     0.07      0.00      0.97 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U384/Y (AO22X1_RVT)
+                                                                     0.05      0.10      1.08 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/n26 (net)
+                                                    1      2.48
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U387/A5 (AO221X1_RVT)
+                                                                     0.05      0.00      1.08 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U387/Y (AO221X1_RVT)
+                                                                     0.06      0.10      1.18 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/n29 (net)
+                                                    1      2.73
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U400/A2 (AO22X1_RVT)
+                                                                     0.06      0.00      1.18 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U400/Y (AO22X1_RVT)
+                                                                     0.04      0.11      1.29 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/n30 (net)
+                                                    1      1.90
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U403/A5 (AO221X1_RVT)
+                                                                     0.04      0.00      1.29 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U403/Y (AO221X1_RVT)
+                                                                     0.05      0.10      1.39 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/n51 (net)
+                                                    1      2.02
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U447/A1 (AO22X1_RVT)
+                                                                     0.05      0.00      1.39 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/U447/Y (AO22X1_RVT)
+                                                                     0.09      0.14      1.52 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_gen_aw_id_counter_i_aw_id_counter/lookup_mst_select_o[0] (net)
+                                                    1      7.21
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U444/A2 (XNOR2X1_RVT)
+                                                                     0.09      0.00      1.52 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U444/Y (XNOR2X1_RVT)
+                                                                     0.04      0.15      1.67 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/n32 (net)
+                                                    1      0.73
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U104/A4 (AOI22X1_RVT)
+                                                                     0.04      0.00      1.67 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U104/Y (AOI22X1_RVT)
+                                                                     0.03      0.10      1.77 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/n30 (net)
+                                                    1      2.22
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/placeZBUF_inst_16839/A (NBUFFX4_RVT)
+                                                                     0.03      0.00      1.77 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/placeZBUF_inst_16839/Y (NBUFFX4_RVT)
+                                                                     0.06      0.08      1.85 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/placeZBUF_10 (net)
+                                                    1     18.39
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U102/A1 (NAND3X2_RVT)
+                                                                     0.06      0.00      1.85 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U102/Y (NAND3X2_RVT)
+                                                                     0.08      0.15      2.01 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/n19 (net)
+                                                    7     16.16
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U3/A2 (NAND2X0_RVT)
+                                                                     0.08      0.00      2.01 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U3/Y (NAND2X0_RVT)
+                                                                     0.09      0.10      2.11 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/n24 (net)
+                                                    2      2.53
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U88/A1 (AND2X2_RVT)
+                                                                     0.09      0.00      2.11 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U88/Y (AND2X2_RVT)
+                                                                     0.07      0.12      2.24 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/mst_reqs_o_0__aw_valid_ (net)
+                                                    4     10.30
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/U149/A2 (AO21X1_RVT)
+                                                                     0.07      0.00      2.24 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/U149/Y (AO21X1_RVT)
+                                                                     0.04      0.11      2.35 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/ax_valid_o (net)
+                                                    2      1.92
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U9/A1 (AND2X1_RVT)
+                                                                     0.04      0.00      2.35 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U9/Y (AND2X1_RVT)
+                                                                     0.03      0.07      2.41 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/mst_req_o_aw_valid_ (net)
+                                                    1      1.61
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/U15/A2 (AND2X1_RVT)
+                                                                     0.03      0.00      2.41 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/U15/Y (AND2X1_RVT)
+                                                                     0.03      0.06      2.48 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/axi_req_valid_1_ (net)
+                                                    1      1.12
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/placeZBUF_inst_12509/A (NBUFFX4_RVT)
+                                                                     0.03      0.00      2.48 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/placeZBUF_inst_12509/Y (NBUFFX4_RVT)
+                                                                     0.06      0.08      2.55 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/placeZBUF_2 (net)
+                                                    2     17.78
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/U95/A3 (AO22X1_RVT)
+                                                                     0.06      0.00      2.56 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/U95/Y (AO22X1_RVT)
+                                                                     0.06      0.10      2.66 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/n12 (net)
+                                                    4      4.01
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/U89/A2 (NAND2X0_RVT)
+                                                                     0.06      0.00      2.66 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/U89/Y (NAND2X0_RVT)
+                                                                     0.05      0.06      2.72 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/n13 (net)
+                                                    1      1.09
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/U3/A1 (AND2X1_RVT)
+                                                                     0.05      0.00      2.72 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/U3/Y (AND2X1_RVT)
+                                                                     0.03      0.08      2.80 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/n1 (net)
+                                                    1      2.43
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeHFSBUF_4868_11327/A (NBUFFX16_RVT)
+                                                                     0.03      0.00      2.80 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeHFSBUF_4868_11327/Y (NBUFFX16_RVT)
+                                                                     0.06      0.07      2.87 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeHFSNET_11302 (net)
+                                                   39     66.84
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeZBUF_inst_12510/A (NBUFFX2_RVT)
+                                                                     0.06      0.01      2.89 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeZBUF_inst_12510/Y (NBUFFX2_RVT)
+                                                                     0.04      0.09      2.97 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeZBUF_0 (net)
+                                                    1      5.96
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeHFSINV_4688_11323/A (INVX8_RVT)
+                                                                     0.04      0.00      2.97 f
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeHFSINV_4688_11323/Y (INVX8_RVT)
+                                                                     0.06      0.06      3.03 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/placeHFSNET_11298 (net)
+                                                   37     47.30
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/U13/A2 (AND2X1_RVT)
+                                                                     0.06      0.00      3.03 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/U13/Y (AND2X1_RVT)
+                                                                     0.03      0.08      3.11 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/i_req_arb/gnt_o[1] (net)
+                                                    1      1.15
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/U14/A1 (AND2X1_RVT)
+                                                                     0.03      0.00      3.11 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/U14/Y (AND2X1_RVT)
+                                                                     0.07      0.09      3.20 r
+  i_soc_domain/i_pulp_soc/soc_peripherals_i/i_axi_lite_to_apb/axi_lite_resp_o_w_ready_ (net)
+                                                    2      6.25
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U12/A1 (AND2X1_RVT)
+                                                                     0.07      0.00      3.20 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U12/Y (AND2X1_RVT)
+                                                                     0.08      0.11      3.31 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/slv_resp_o_aw_ready_ (net)
+                                                    7      7.24
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U11/A1 (AND2X1_RVT)
+                                                                     0.08      0.00      3.31 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U11/Y (AND2X1_RVT)
+                                                                     0.06      0.10      3.41 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/aw_push (net)
+                                                    4      4.23
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/i_aw_id_fifo/U7/A1 (XOR2X1_RVT)
+                                                                     0.06      0.00      3.41 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/i_aw_id_fifo/U7/Y (XOR2X1_RVT)
+                                                                     0.05      0.15      3.56 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/i_aw_id_fifo/n9 (net)
+                                                    2      1.88
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/i_aw_id_fifo/U10/A2 (AND2X1_RVT)
+                                                                     0.05      0.00      3.56 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/i_aw_id_fifo/U10/Y (AND2X1_RVT)
+                                                                     0.03      0.08      3.63 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/i_aw_id_fifo/empty_o (net)
+                                                    1      1.32
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U43/A (INVX1_RVT)
+                                                                     0.03      0.00      3.63 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U43/Y (INVX1_RVT)
+                                                                     0.03      0.03      3.66 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/n172 (net)
+                                                    2      1.94
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U14/A2 (AND2X1_RVT)
+                                                                     0.03      0.00      3.66 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/U14/Y (AND2X1_RVT)
+                                                                     0.07      0.09      3.76 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_to_axi_lite_id_reflect/slv_resp_o_b_valid_ (net)
+                                                    6      6.13
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/U56/A1 (AND2X1_RVT)
+                                                                     0.07      0.00      3.76 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/U56/Y (AND2X1_RVT)
+                                                                     0.05      0.09      3.85 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/w_cnt_req (net)
+                                                    3      3.45
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U48/A1 (NAND2X0_RVT)
+                                                                     0.05      0.00      3.85 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U48/Y (NAND2X0_RVT)
+                                                                     0.08      0.08      3.92 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/oup_gnt_o (net)
+                                                    2      2.68
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/placeHFSINV_312_11298/A (INVX2_RVT)
+                                                                     0.08      0.00      3.92 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/placeHFSINV_312_11298/Y (INVX2_RVT)
+                                                                     0.06      0.08      4.00 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/placeHFSNET_11283 (net)
+                                                    7      8.70
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U42/A4 (AO22X1_RVT)
+                                                                     0.06      0.00      4.00 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U42/Y (AO22X1_RVT)
+                                                                     0.04      0.10      4.10 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/match_in_id[3] (net)
+                                                    1      1.76
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U30/A1 (XNOR2X1_RVT)
+                                                                     0.04      0.00      4.10 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U30/Y (XNOR2X1_RVT)
+                                                                     0.04      0.12      4.22 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/n5 (net)
+                                                    1      0.66
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U31/A2 (NAND2X0_RVT)
+                                                                     0.04      0.00      4.22 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U31/Y (NAND2X0_RVT)
+                                                                     0.05      0.05      4.27 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/n24 (net)
+                                                    1      1.35
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U53/A1 (NOR4X0_RVT)
+                                                                     0.05      0.00      4.27 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U53/Y (NOR4X0_RVT)
+                                                                     0.03      0.17      4.44 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/N19 (net)
+                                                    1      1.50
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U46/A3 (NAND3X0_RVT)
+                                                                     0.03      0.00      4.44 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U46/Y (NAND3X0_RVT)
+                                                                     0.15      0.12      4.56 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/n26 (net)
+                                                    4      3.56
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U11/A (INVX1_RVT)
+                                                                     0.15      0.00      4.56 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U11/Y (INVX1_RVT)
+                                                                     0.10      0.12      4.68 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/n7 (net)
+                                                    4      5.62
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U16/A1 (AND2X1_RVT)
+                                                                     0.10      0.00      4.68 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/U16/Y (AND2X1_RVT)
+                                                                     0.04      0.09      4.76 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/i_idq/oup_data_valid_o (net)
+                                                    2      2.37
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/U18/A1 (AND2X1_RVT)
+                                                                     0.04      0.00      4.76 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/U18/Y (AND2X1_RVT)
+                                                                     0.06      0.09      4.85 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_axi_burst_splitter_aw_chan/i_axi_burst_splitter_counters/cnt_gnt_o (net)
+                                                    5      5.22
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/U64/A1 (NAND3X0_RVT)
+                                                                     0.06      0.00      4.85 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/U64/Y (NAND3X0_RVT)
+                                                                     0.07      0.06      4.91 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/n39 (net)
+                                                    1      0.83
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/U95/A2 (NAND2X2_RVT)
+                                                                     0.07      0.00      4.91 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/U95/Y (NAND2X2_RVT)
+                                                                     0.06      0.14      5.05 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/act_resp_b_valid_ (net)
+                                                    7     10.93
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_i_b_mux/U23/A3 (AO22X1_RVT)
+                                                                     0.06      0.00      5.06 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_i_b_mux/U23/Y (AO22X1_RVT)
+                                                                     0.07      0.11      5.17 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_i_b_mux/gen_arbiter_gen_int_rr_gen_fair_arb_lower_mask_0_ (net)
+                                                    4      5.38
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_i_b_mux/U17/A2 (NAND2X0_RVT)
+                                                                     0.07      0.00      5.17 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_i_b_mux/U17/Y (NAND2X0_RVT)
+                                                                     0.14      0.13      5.30 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/genblk1_i_b_mux/idx_o[0] (net)
+                                                    3      4.94
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/placeHFSINV_356_11295/A (INVX1_RVT)
+                                                                     0.14      0.00      5.30 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/placeHFSINV_356_11295/Y (INVX1_RVT)
+                                                                     0.07      0.09      5.38 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/placeHFSNET_11282 (net)
+                                                    2      2.49
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U160/A2 (AND2X2_RVT)
+                                                                     0.07      0.00      5.38 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U160/Y (AND2X2_RVT)
+                                                                     0.07      0.12      5.50 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/n17 (net)
+                                                    6      9.51
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U74/A4 (AO22X2_RVT)
+                                                                     0.07      0.00      5.50 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/U74/Y (AO22X2_RVT)
+                                                                     0.08      0.14      5.65 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_burst_splitter/i_demux_supported_vs_unsupported/i_demux_simple/slv_resp_o_b__id__1_ (net)
+                                                    2      9.48
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/placeHFSBUF_335_11277/A (NBUFFX8_RVT)
+                                                                     0.08      0.00      5.65 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/placeHFSBUF_335_11277/Y (NBUFFX8_RVT)
+                                                                     0.06      0.10      5.74 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/placeHFSNET_11268 (net)
+                                                    3     38.54
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_atop_filter/U96/A1 (AO22X2_RVT)
+                                                                     0.06      0.00      5.75 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_atop_filter/U96/Y (AO22X2_RVT)
+                                                                     0.08      0.15      5.90 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi_to_axi_lite/i_axi_to_axi_lite/i_axi_atop_filter/slv_resp_o_b__id__1_ (net)
+                                                    1      9.82
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/placeZBUF_inst_14982/A (NBUFFX2_RVT)
+                                                                     0.08      0.00      5.90 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/placeZBUF_inst_14982/Y (NBUFFX2_RVT)
+                                                                     0.06      0.10      5.99 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/placeZBUF_7 (net)
+                                                    8      9.67
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/U339/A2 (AND2X1_RVT)
+                                                                     0.06      0.00      5.99 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/U339/Y (AND2X1_RVT)
+                                                                     0.04      0.08      6.08 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/sll_390_ML_int_2__3_ (net)
+                                                    2      2.13
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/U343/A2 (AND2X1_RVT)
+                                                                     0.04      0.00      6.08 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/U343/Y (AND2X1_RVT)
+                                                                     0.03      0.07      6.14 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/sll_390_ML_int_3__7_ (net)
+                                                    1      1.02
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/U364/A1 (AND2X1_RVT)
+                                                                     0.03      0.00      6.14 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/U364/Y (AND2X1_RVT)
+                                                                     0.03      0.06      6.20 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/sll_390_ML_int_4__7_ (net)
+                                                    1      1.37
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/U44/A1 (AND2X1_RVT)
+                                                                     0.03      0.00      6.20 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/U44/Y (AND2X1_RVT)
+                                                                     0.04      0.07      6.27 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_1__i_axi_mux/gen_mux_slv_b_valids[7] (net)
+                                                    1      2.47
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_7__i_axi_demux/i_demux_simple/genblk1_i_b_mux/U38/A3 (AO22X1_RVT)
+                                                                     0.04      0.00      6.27 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_7__i_axi_demux/i_demux_simple/genblk1_i_b_mux/U38/Y (AO22X1_RVT)
+                                                                     0.10      0.12      6.39 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_7__i_axi_demux/i_demux_simple/genblk1_i_b_mux/n26 (net)
+                                                    6      8.16
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_7__i_axi_demux/i_demux_simple/genblk1_i_b_mux/U35/A1 (OR3X4_RVT)
+                                                                     0.10      0.00      6.39 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_7__i_axi_demux/i_demux_simple/genblk1_i_b_mux/U35/Y (OR3X4_RVT)
+                                                                     0.07      0.19      6.58 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_7__i_axi_demux/i_demux_simple/genblk1_i_b_mux/req_o (net)
+                                                    5     22.00
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_7__i_lint2axi_bridge/i_axi_lite_from_mem/U12/A3 (AO22X1_RVT)
+                                                                     0.07      0.00      6.59 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_7__i_lint2axi_bridge/i_axi_lite_from_mem/U12/Y (AO22X1_RVT)
+                                                                     0.07      0.12      6.70 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_7__i_lint2axi_bridge/i_axi_lite_from_mem/mem_rsp_valid_o (net)
+                                                    1      5.40
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/placeZBUF_inst_16855/A (NBUFFX2_RVT)
+                                                                     0.07      0.00      6.70 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/placeZBUF_inst_16855/Y (NBUFFX2_RVT)
+                                                                     0.08      0.11      6.81 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/placeZBUF_8 (net)
+                                                    3     14.46
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_7__i_l2_demux/U265/A3 (AO222X1_RVT)
+                                                                     0.08      0.00      6.81 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_7__i_l2_demux/U265/Y (AO222X1_RVT)
+                                                                     0.07      0.16      6.97 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_7__i_l2_demux/n57 (net)
+                                                    3      4.15
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_7__i_l2_demux/U264/A2 (AND2X1_RVT)
+                                                                     0.07      0.00      6.97 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_7__i_l2_demux/U264/Y (AND2X1_RVT)
+                                                                     0.04      0.09      7.06 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_7__i_l2_demux/master_port_r_valid (net)
+                                                    1      2.14
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/placeHFSBUF_61_10917/A (NBUFFX8_RVT)
+                                                                     0.04      0.00      7.06 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/placeHFSBUF_61_10917/Y (NBUFFX8_RVT)
+                                                                     0.06      0.08      7.14 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/placeHFSNET_10951 (net)
+                                                    2     34.73
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_resp_regs_0__i_ft_reg/U5/A1 (AND2X1_RVT)
+                                                                     0.06      0.01      7.15 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_resp_regs_0__i_ft_reg/U5/Y (AND2X1_RVT)
+                                                                     0.05      0.09      7.24 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_resp_regs_0__i_ft_reg/push (net)
+                                                    3      3.81
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_resp_regs_0__i_ft_reg/fifo_i/U100/A3 (OR3X1_RVT)
+                                                                     0.05      0.00      7.24 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_resp_regs_0__i_ft_reg/fifo_i/U100/Y (OR3X1_RVT)
+                                                                     0.03      0.08      7.31 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_resp_regs_0__i_ft_reg/fifo_i/empty_o (net)
+                                                    1      1.04
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/placeZBUF_inst_16860/A (NBUFFX4_RVT)
+                                                                     0.03      0.00      7.31 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/placeZBUF_inst_16860/Y (NBUFFX4_RVT)
+                                                                     0.06      0.08      7.39 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/placeZBUF_2 (net)
+                                                    3     19.28
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/U27/A4 (OA22X2_RVT)
+                                                                     0.06      0.00      7.40 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/U27/Y (OA22X2_RVT)
+                                                                     0.10      0.14      7.54 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/rvalid_o (net)
+                                                    4     13.93
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/gen_buf_i_resp_buf/U5/A1 (AND2X1_RVT)
+                                                                     0.09      0.00      7.54 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/gen_buf_i_resp_buf/U5/Y (AND2X1_RVT)
+                                                                     0.05      0.09      7.63 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/gen_buf_i_resp_buf/push (net)
+                                                    3      3.00
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/gen_buf_i_resp_buf/fifo_i/U168/A3 (OR3X4_RVT)
+                                                                     0.05      0.00      7.63 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/gen_buf_i_resp_buf/fifo_i/U168/Y (OR3X4_RVT)
+                                                                     0.08      0.16      7.80 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/gen_buf_i_resp_buf/fifo_i/empty_o (net)
+                                                    4     30.26
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_join/i_stream_join_dynamic/U4/A1 (OA222X1_RVT)
+                                                                     0.08      0.01      7.80 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_join/i_stream_join_dynamic/U4/Y (OA222X1_RVT)
+                                                                     0.06      0.16      7.96 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_join/i_stream_join_dynamic/oup_valid_o (net)
+                                                    2      2.63
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/U10/A1 (AND2X1_RVT)
+                                                                     0.06      0.00      7.96 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/U10/Y (AND2X1_RVT)
+                                                                     0.08      0.11      8.07 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/int_inp_valid (net)
+                                                    6      7.59
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/U6/A1 (AND2X1_RVT)
+                                                                     0.08      0.00      8.07 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/U6/Y (AND2X1_RVT)
+                                                                     0.03      0.08      8.15 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/valid_o[0] (net)
+                                                    1      1.14
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/U6/A1 (AND3X1_RVT)
+                                                                     0.03      0.00      8.15 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/U6/Y (AND3X1_RVT)
+                                                                     0.09      0.12      8.26 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/valid_o[0] (net)
+                                                    1      7.49
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/U24/A3 (AO22X1_RVT)
+                                                                     0.09      0.00      8.26 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/U24/Y (AO22X1_RVT)
+                                                                     0.08      0.13      8.39 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/n170 (net)
+                                                    4      6.54
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/U18/A2 (NAND2X0_RVT)
+                                                                     0.08      0.00      8.39 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/U18/Y (NAND2X0_RVT)
+                                                                     0.05      0.07      8.46 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/n160 (net)
+                                                    1      0.99
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/U17/A1 (NAND2X2_RVT)
+                                                                     0.05      0.00      8.46 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/U17/Y (NAND2X2_RVT)
+                                                                     0.05      0.12      8.58 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/idx_o[0] (net)
+                                                    4      8.48
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/U13/A2 (AND2X1_RVT)
+                                                                     0.05      0.00      8.58 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/U13/Y (AND2X1_RVT)
+                                                                     0.08      0.11      8.68 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_split_read_write/genblk1_i_r_mux/gnt_o[1] (net)
+                                                    1      6.85
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/U9/A1 (OA21X1_RVT)
+                                                                     0.08      0.00      8.69 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/U9/Y (OA21X1_RVT)
+                                                                     0.05      0.12      8.80 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/int_oup_ready[0] (net)
+                                                    3      3.19
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/U15/A3 (OA22X1_RVT)
+                                                                     0.05      0.00      8.80 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/U15/Y (OA22X1_RVT)
+                                                                     0.03      0.09      8.89 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/n18 (net)
+                                                    1      1.00
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/U14/A3 (NAND3X0_RVT)
+                                                                     0.03      0.00      8.89 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/U14/Y (NAND3X0_RVT)
+                                                                     0.10      0.09      8.98 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/n23 (net)
+                                                    2      2.09
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/U12/A1 (NAND2X0_RVT)
+                                                                     0.10      0.00      8.98 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/U12/Y (NAND2X0_RVT)
+                                                                     0.12      0.13      9.11 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/i_fork/ready_o (net)
+                                                    2      3.65
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/U7/A1 (AND2X1_RVT)
+                                                                     0.12      0.00      9.11 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/U7/Y (AND2X1_RVT)
+                                                                     0.05      0.10      9.21 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_fork_dynamic/sel_ready_o (net)
+                                                    3      3.12
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_join/i_stream_join_dynamic/U3/A1 (AND2X2_RVT)
+                                                                     0.05      0.00      9.21 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_join/i_stream_join_dynamic/U3/Y (AND2X2_RVT)
+                                                                     0.08      0.12      9.33 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_join/i_stream_join_dynamic/placeHFSNET_9692 (net)
+                                                    3     12.77
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/U16/A2 (NAND2X0_RVT)
+                                                                     0.08      0.00      9.33 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/U16/Y (NAND2X0_RVT)
+                                                                     0.17      0.15      9.48 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/n11 (net)
+                                                    3      6.38
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/U146/A3 (OAI21X1_RVT)
+                                                                     0.17      0.00      9.48 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/U146/Y (OAI21X1_RVT)
+                                                                     0.04      0.19      9.67 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/n3 (net)
+                                                    2      2.16
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/U8/A2 (AND2X1_RVT)
+                                                                     0.04      0.00      9.67 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/U8/Y (AND2X1_RVT)
+                                                                     0.06      0.09      9.76 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_stream_to_mem/mem_req_valid_o (net)
+                                                    1      4.42
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/U18/A1 (AND2X4_RVT)
+                                                                     0.06      0.00      9.76 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/U18/Y (AND2X4_RVT)
+                                                                     0.08      0.13      9.89 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/req_valid (net)
+                                                    3     18.68
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/U5/A1 (AND2X1_RVT)
+                                                                     0.08      0.00      9.89 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/U5/Y (AND2X1_RVT)
+                                                                     0.08      0.11     10.00 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/push (net)
+                                                    3      7.32
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/U329/A3 (NAND3X4_RVT)
+                                                                     0.08      0.00     10.00 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/U329/Y (NAND3X4_RVT)
+                                                                     0.07      0.18     10.19 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/n502 (net)
+                                                    5     23.65
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/U4/A2 (AND2X1_RVT)
+                                                                     0.07      0.00     10.19 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/U4/Y (AND2X1_RVT)
+                                                                     0.05      0.11     10.29 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/n504 (net)
+                                                    2      3.93
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/placeHFSBUF_527_9207/A (NBUFFX8_RVT)
+                                                                     0.05      0.00     10.29 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/placeHFSBUF_527_9207/Y (NBUFFX8_RVT)
+                                                                     0.07      0.09     10.39 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/placeHFSNET_9563 (net)
+                                                   40     53.65
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/U317/A1 (AO222X1_RVT)
+                                                                     0.07      0.01     10.39 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/U317/Y (AO222X1_RVT)
+                                                                     0.08      0.18     10.57 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_axi64_to_lint32/i_axi_to_mem_split/i_axi_to_mem_write/i_axi_to_detailed_mem/i_mem_to_banks/gen_reqs_1__i_ft_reg/fifo_i/data_o_addr__18_ (net)
+                                                    1      6.94
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeZBUF_inst_27314/A (NBUFFX2_RVT)
+                                                                     0.08      0.00     10.57 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeZBUF_inst_27314/Y (NBUFFX2_RVT)
+                                                                     0.07      0.11     10.68 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeZBUF_92 (net)
+                                                    5     13.56
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/placeHFSINV_780_9148/A (INVX0_RVT)
+                                                                     0.07      0.00     10.68 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/placeHFSINV_780_9148/Y (INVX0_RVT)
+                                                                     0.09      0.09     10.78 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/placeHFSNET_9513 (net)
+                                                    5      5.26
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U360/A2 (OA221X1_RVT)
+                                                                     0.09      0.00     10.78 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U360/Y (OA221X1_RVT)
+                                                                     0.04      0.13     10.91 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n339 (net)
+                                                    1      1.44
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U361/A5 (AO221X1_RVT)
+                                                                     0.04      0.00     10.91 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U361/Y (AO221X1_RVT)
+                                                                     0.04      0.09     11.00 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n340 (net)
+                                                    1      1.12
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U362/A5 (OA221X1_RVT)
+                                                                     0.04      0.00     11.00 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U362/Y (OA221X1_RVT)
+                                                                     0.04      0.08     11.08 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n341 (net)
+                                                    1      0.97
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U363/A5 (AO221X1_RVT)
+                                                                     0.04      0.00     11.08 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U363/Y (AO221X1_RVT)
+                                                                     0.04      0.09     11.17 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n342 (net)
+                                                    1      1.10
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U364/A5 (OA221X1_RVT)
+                                                                     0.04      0.00     11.17 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U364/Y (OA221X1_RVT)
+                                                                     0.04      0.09     11.26 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n343 (net)
+                                                    1      1.41
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U365/A5 (AO221X1_RVT)
+                                                                     0.04      0.00     11.26 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U365/Y (AO221X1_RVT)
+                                                                     0.04      0.09     11.35 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n344 (net)
+                                                    1      1.50
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U366/A5 (OA221X1_RVT)
+                                                                     0.04      0.00     11.35 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U366/Y (OA221X1_RVT)
+                                                                     0.04      0.08     11.43 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n345 (net)
+                                                    1      0.83
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U367/A5 (AO221X1_RVT)
+                                                                     0.04      0.00     11.43 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U367/Y (AO221X1_RVT)
+                                                                     0.04      0.09     11.52 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n346 (net)
+                                                    1      1.53
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U368/A5 (OA221X1_RVT)
+                                                                     0.04      0.00     11.52 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U368/Y (OA221X1_RVT)
+                                                                     0.05      0.09     11.62 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n347 (net)
+                                                    1      2.01
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U369/A5 (AO221X1_RVT)
+                                                                     0.05      0.00     11.62 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U369/Y (AO221X1_RVT)
+                                                                     0.04      0.09     11.71 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n348 (net)
+                                                    1      0.93
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U370/A5 (OA221X1_RVT)
+                                                                     0.04      0.00     11.71 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U370/Y (OA221X1_RVT)
+                                                                     0.04      0.09     11.80 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n349 (net)
+                                                    1      1.51
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U371/A5 (AO221X1_RVT)
+                                                                     0.04      0.00     11.80 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U371/Y (AO221X1_RVT)
+                                                                     0.05      0.09     11.89 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n350 (net)
+                                                    1      1.76
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U372/A5 (OA221X1_RVT)
+                                                                     0.05      0.00     11.89 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U372/Y (OA221X1_RVT)
+                                                                     0.04      0.09     11.98 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n351 (net)
+                                                    1      0.86
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U373/A3 (AO21X1_RVT)
+                                                                     0.04      0.00     11.98 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U373/Y (AO21X1_RVT)
+                                                                     0.03      0.06     12.04 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n353 (net)
+                                                    1      1.33
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U375/A3 (AO22X1_RVT)
+                                                                     0.03      0.00     12.04 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U375/Y (AO22X1_RVT)
+                                                                     0.03      0.07     12.11 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/N31 (net)
+                                                    1      1.12
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U60/A3 (AO21X1_RVT)
+                                                                     0.03      0.00     12.11 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U60/Y (AO21X1_RVT)
+                                                                     0.02      0.06     12.17 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n397 (net)
+                                                    1      1.05
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U59/A2 (NAND2X0_RVT)
+                                                                     0.02      0.00     12.17 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U59/Y (NAND2X0_RVT)
+                                                                     0.11      0.09     12.26 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n403 (net)
+                                                    4      4.00
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U2/A1 (AND4X1_RVT)
+                                                                     0.11      0.00     12.26 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U2/Y (AND4X1_RVT)
+                                                                     0.05      0.15     12.41 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n405 (net)
+                                                    2      2.06
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U49/A2 (AO221X1_RVT)
+                                                                     0.05      0.00     12.41 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U49/Y (AO221X1_RVT)
+                                                                     0.04      0.14     12.55 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/n406 (net)
+                                                    1      2.03
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U48/A3 (AO22X1_RVT)
+                                                                     0.04      0.00     12.55 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/U48/Y (AO22X1_RVT)
+                                                                     0.06      0.10     12.65 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/i_addr_decode/i_addr_decode_dync/idx_o[1] (net)
+                                                    1      6.28
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeZBUF_inst_27325/A (NBUFFX4_RVT)
+                                                                     0.06      0.00     12.65 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeZBUF_inst_27325/Y (NBUFFX4_RVT)
+                                                                     0.06      0.10     12.75 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeZBUF_93 (net)
+                                                    4     23.92
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeHFSINV_309_8803/A (INVX1_RVT)
+                                                                     0.07      0.00     12.76 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeHFSINV_309_8803/Y (INVX1_RVT)
+                                                                     0.05      0.06     12.82 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeHFSNET_9249 (net)
+                                                    2      3.03
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/U263/A2 (AND2X2_RVT)
+                                                                     0.05      0.00     12.82 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/U263/Y (AND2X2_RVT)
+                                                                     0.09      0.13     12.94 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/n53 (net)
+                                                    2     14.45
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeHFSBUF_265_8780/A (NBUFFX8_RVT)
+                                                                     0.09      0.00     12.94 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeHFSBUF_265_8780/Y (NBUFFX8_RVT)
+                                                                     0.06      0.10     13.04 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/placeHFSNET_9217 (net)
+                                                   32     37.60
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/U208/A2 (AND2X4_RVT)
+                                                                     0.06      0.00     13.05 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/U208/Y (AND2X4_RVT)
+                                                                     0.10      0.15     13.20 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_8__i_l2_demux/slave_ports_0__add[20] (net)
+                                                    8     28.34
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U147/A1 (OA221X1_RVT)
+                                                                     0.10      0.01     13.20 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U147/Y (OA221X1_RVT)
+                                                                     0.04      0.14     13.34 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n20 (net)
+                                                    1      1.10
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U148/A5 (AO221X1_RVT)
+                                                                     0.04      0.00     13.34 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U148/Y (AO221X1_RVT)
+                                                                     0.04      0.09     13.43 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n21 (net)
+                                                    1      1.40
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U149/A5 (OA221X1_RVT)
+                                                                     0.04      0.00     13.43 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U149/Y (OA221X1_RVT)
+                                                                     0.04      0.08     13.52 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n50 (net)
+                                                    1      0.79
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U150/A5 (AO221X1_RVT)
+                                                                     0.04      0.00     13.52 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U150/Y (AO221X1_RVT)
+                                                                     0.04      0.08     13.60 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n51 (net)
+                                                    1      0.76
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U151/A5 (OA221X1_RVT)
+                                                                     0.04      0.00     13.60 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U151/Y (OA221X1_RVT)
+                                                                     0.04      0.08     13.68 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n52 (net)
+                                                    1      0.91
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U152/A5 (AO221X1_RVT)
+                                                                     0.04      0.00     13.68 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U152/Y (AO221X1_RVT)
+                                                                     0.05      0.09     13.78 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n53 (net)
+                                                    1      1.64
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U153/A5 (OA221X1_RVT)
+                                                                     0.05      0.00     13.78 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U153/Y (OA221X1_RVT)
+                                                                     0.06      0.10     13.88 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n54 (net)
+                                                    1      3.00
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U154/A5 (AO221X1_RVT)
+                                                                     0.06      0.00     13.88 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U154/Y (AO221X1_RVT)
+                                                                     0.05      0.10     13.98 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n55 (net)
+                                                    1      1.95
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U155/A5 (OA221X1_RVT)
+                                                                     0.05      0.00     13.98 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U155/Y (OA221X1_RVT)
+                                                                     0.05      0.10     14.08 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n56 (net)
+                                                    1      1.83
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U156/A5 (AO221X1_RVT)
+                                                                     0.05      0.00     14.08 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U156/Y (AO221X1_RVT)
+                                                                     0.06      0.11     14.19 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n57 (net)
+                                                    1      3.13
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U157/A5 (OA221X1_RVT)
+                                                                     0.06      0.00     14.19 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U157/Y (OA221X1_RVT)
+                                                                     0.05      0.10     14.29 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n58 (net)
+                                                    1      1.95
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U158/A3 (AO21X1_RVT)
+                                                                     0.05      0.00     14.29 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U158/Y (AO21X1_RVT)
+                                                                     0.04      0.06     14.35 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n60 (net)
+                                                    1      0.94
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U160/A3 (AO22X1_RVT)
+                                                                     0.04      0.00     14.35 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U160/Y (AO22X1_RVT)
+                                                                     0.05      0.09     14.43 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/N8 (net)
+                                                    2      2.56
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U44/A1 (NAND2X0_RVT)
+                                                                     0.05      0.00     14.43 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U44/Y (NAND2X0_RVT)
+                                                                     0.05      0.05     14.49 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n278 (net)
+                                                    1      1.27
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U39/A1 (NAND2X0_RVT)
+                                                                     0.05      0.00     14.49 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U39/Y (NAND2X0_RVT)
+                                                                     0.11      0.10     14.58 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/n276 (net)
+                                                    1      3.28
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U38/A1 (NOR2X4_RVT)
+                                                                     0.11      0.00     14.58 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/U38/Y (NOR2X4_RVT)
+                                                                     0.08      0.19     14.77 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_aw_decode/i_addr_decode_dync/dec_error_o (net)
+                                                    8     27.01
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/placeHFSINV_312_8480/A (INVX1_RVT)
+                                                                     0.08      0.01     14.78 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/placeHFSINV_312_8480/Y (INVX1_RVT)
+                                                                     0.06      0.08     14.85 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/placeHFSNET_8938 (net)
+                                                    3      4.23
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/U20/A2 (AND2X2_RVT)
+                                                                     0.06      0.00     14.85 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/U20/Y (AND2X2_RVT)
+                                                                     0.09      0.13     14.98 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/placeHFSNET_8898 (net)
+                                                    8     13.90
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U741/A1 (XNOR2X1_RVT)
+                                                                     0.09      0.00     14.98 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U741/Y (XNOR2X1_RVT)
+                                                                     0.04      0.13     15.11 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/n682 (net)
+                                                    1      0.73
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U117/A1 (NAND2X0_RVT)
+                                                                     0.04      0.00     15.11 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U117/Y (NAND2X0_RVT)
+                                                                     0.05      0.05     15.16 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/n683 (net)
+                                                    1      1.07
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U116/A2 (AOI22X1_RVT)
+                                                                     0.05      0.00     15.16 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U116/Y (AOI22X1_RVT)
+                                                                     0.03      0.13     15.29 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/n685 (net)
+                                                    1      2.17
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U114/A1 (NAND3X2_RVT)
+                                                                     0.03      0.00     15.29 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U114/Y (NAND3X2_RVT)
+                                                                     0.06      0.13     15.42 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/n700 (net)
+                                                    7      9.82
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U3/A2 (NAND2X0_RVT)
+                                                                     0.06      0.00     15.42 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U3/Y (NAND2X0_RVT)
+                                                                     0.20      0.17     15.59 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/n697 (net)
+                                                    4      7.76
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U99/A3 (AND3X1_RVT)
+                                                                     0.20      0.00     15.59 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/U99/Y (AND3X1_RVT)
+                                                                     0.06      0.21     15.80 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_8__i_axi_demux/i_demux_simple/mst_reqs_o_0__aw_valid_ (net)
+                                                    2      4.45
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/U587/A3 (AO22X2_RVT)
+                                                                     0.06      0.00     15.80 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/U587/Y (AO22X2_RVT)
+                                                                     0.06      0.12     15.91 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/n67 (net)
+                                                    5      9.40
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/placeHFSINV_391_8249/A (INVX0_RVT)
+                                                                     0.06      0.00     15.91 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/placeHFSINV_391_8249/Y (INVX0_RVT)
+                                                                     0.04      0.05     15.97 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/placeHFSNET_8785 (net)
+                                                    1      1.32
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/U577/A2 (NAND4X0_RVT)
+                                                                     0.04      0.00     15.97 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/U577/Y (NAND4X0_RVT)
+                                                                     0.27      0.21     16.18 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_aw_arbiter/req_o (net)
+                                                    3      6.75
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U283/A3 (NAND3X1_RVT)
+                                                                     0.27      0.00     16.18 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U283/Y (NAND3X1_RVT)
+                                                                     0.08      0.28     16.46 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/n22 (net)
+                                                    4      7.40
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U320/A (INVX0_RVT)
+                                                                     0.08      0.00     16.46 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U320/Y (INVX0_RVT)
+                                                                     0.06      0.06     16.52 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/n5 (net)
+                                                    3      2.63
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/U71/A3 (NAND3X0_RVT)
+                                                                     0.06      0.00     16.52 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/U71/Y (NAND3X0_RVT)
+                                                                     0.12      0.11     16.63 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/n49 (net)
+                                                    5      5.26
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/U10/A (INVX0_RVT)
+                                                                     0.12      0.00     16.63 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/U10/Y (INVX0_RVT)
+                                                                     0.09      0.10     16.72 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/n81 (net)
+                                                    5      4.65
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/U68/A1 (AO22X1_RVT)
+                                                                     0.09      0.00     16.72 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/U68/Y (AO22X1_RVT)
+                                                                     0.08      0.16     16.88 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_i_w_fifo/data_o[2] (net)
+                                                    1      6.42
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/placeZBUF_inst_27966/A (NBUFFX4_RVT)
+                                                                     0.08      0.00     16.88 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/placeZBUF_inst_27966/Y (NBUFFX4_RVT)
+                                                                     0.06      0.10     16.98 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/placeZBUF_26 (net)
+                                                    5     19.68
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/placeHFSINV_521_8029/A (INVX1_RVT)
+                                                                     0.06      0.00     16.99 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/placeHFSINV_521_8029/Y (INVX1_RVT)
+                                                                     0.06      0.07     17.06 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/placeHFSNET_8641 (net)
+                                                    4      5.35
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U280/A2 (AND2X1_RVT)
+                                                                     0.06      0.00     17.06 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U280/Y (AND2X1_RVT)
+                                                                     0.05      0.09     17.15 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/n24 (net)
+                                                    3      3.09
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U276/A3 (AND3X1_RVT)
+                                                                     0.05      0.00     17.15 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U276/Y (AND3X1_RVT)
+                                                                     0.08      0.13     17.28 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/n33 (net)
+                                                    2      6.69
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U10/A2 (AND2X1_RVT)
+                                                                     0.08      0.00     17.28 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/U10/Y (AND2X1_RVT)
+                                                                     0.04      0.09     17.37 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_mst_port_mux_0__i_axi_mux/gen_mux_slv_w_readies[0] (net)
+                                                    1      2.07
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_0__i_axi_demux/i_demux_simple/U107/A3 (AO222X1_RVT)
+                                                                     0.04      0.00     17.37 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_0__i_axi_demux/i_demux_simple/U107/Y (AO222X1_RVT)
+                                                                     0.05      0.12     17.49 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_0__i_axi_demux/i_demux_simple/aps_rename_38_ (net)
+                                                    1      1.65
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_0__i_axi_demux/i_demux_simple/placepopt_d_inst_29962/A (INVX1_RVT)
+                                                                     0.05      0.00     17.49 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_0__i_axi_demux/i_demux_simple/placepopt_d_inst_29962/Y (INVX1_RVT)
+                                                                     0.06      0.06     17.55 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/i_axi_xbar/i_xbar/gen_slv_port_demux_0__i_axi_demux/i_demux_simple/slv_resp_o_w_ready_ (net)
+                                                    4      5.36
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/U27/A2 (NAND2X0_RVT)
+                                                                     0.06      0.00     17.55 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/U27/Y (NAND2X0_RVT)
+                                                                     0.07      0.08     17.63 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/n16 (net)
+                                                    2      1.93
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/U16/A1 (NAND3X0_RVT)
+                                                                     0.07      0.00     17.63 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/U16/Y (NAND3X0_RVT)
+                                                                     0.08      0.08     17.71 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/n15 (net)
+                                                    1      1.43
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/U15/A2 (NAND2X0_RVT)
+                                                                     0.08      0.00     17.71 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/U15/Y (NAND2X0_RVT)
+                                                                     0.06      0.08     17.79 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/n13 (net)
+                                                    1      0.99
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/U14/A4 (AO22X1_RVT)
+                                                                     0.06      0.00     17.79 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/U14/Y (AO22X1_RVT)
+                                                                     0.08      0.13     17.91 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_tcdm_2_axi_bridge_0__i_lint2axi_bridge/i_axi_lite_from_mem/mem_gnt_o (net)
+                                                    1      6.47
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/placeHFSBUF_216_6510/A (NBUFFX4_RVT)
+                                                                     0.08      0.00     17.92 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/placeHFSBUF_216_6510/Y (NBUFFX4_RVT)
+                                                                     0.06      0.10     18.01 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/placeHFSNET_7120 (net)
+                                                    4     18.00
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/U262/A3 (AO222X1_RVT)
+                                                                     0.06      0.00     18.02 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/U262/Y (AO222X1_RVT)
+                                                                     0.05      0.13     18.14 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/n17 (net)
+                                                    1      1.08
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/U261/A2 (AND2X1_RVT)
+                                                                     0.05      0.00     18.14 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/U261/Y (AND2X1_RVT)
+                                                                     0.04      0.08     18.22 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/n7 (net)
+                                                    2      2.19
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/U260/A3 (OA21X1_RVT)
+                                                                     0.04      0.00     18.22 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/U260/Y (OA21X1_RVT)
+                                                                     0.04      0.08     18.30 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/aps_rename_33_ (net)
+                                                    1      1.95
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/placepopt_d_inst_29956/A (INVX2_RVT)
+                                                                     0.04      0.00     18.30 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/placepopt_d_inst_29956/Y (INVX2_RVT)
+                                                                     0.05      0.05     18.35 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/popt_net_1052 (net)
+                                                    1      9.23
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/placepopt_d_inst_29955/A (INVX4_RVT)
+                                                                     0.05      0.00     18.35 f
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/placepopt_d_inst_29955/Y (INVX4_RVT)
+                                                                     0.07      0.06     18.41 r
+  i_soc_domain/i_pulp_soc/i_soc_interconnect_wrap/i_soc_interconnect/gen_l2_demux_0__i_l2_demux/master_port_gnt (net)
+                                                    3     24.36
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/U123/A1 (NAND2X1_RVT)
+                                                                     0.07      0.01     18.42 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/U123/Y (NAND2X1_RVT)
+                                                                     0.06      0.12     18.54 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/n99 (net)
+                                                    3      6.36
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/U122/A1 (NAND2X0_RVT)
+                                                                     0.06      0.00     18.55 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/U122/Y (NAND2X0_RVT)
+                                                                     0.05      0.07     18.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/n139 (net)
+                                                    1      0.93
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/U121/A2 (AO221X1_RVT)
+                                                                     0.05      0.00     18.61 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/U121/Y (AO221X1_RVT)
+                                                                     0.04      0.12     18.73 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/load_store_unit_i/lsu_ready_ex_o (net)
+                                                    1      0.93
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/placeZBUF_inst_17125/A (NBUFFX4_RVT)
+                                                                     0.04      0.00     18.73 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/placeZBUF_inst_17125/Y (NBUFFX4_RVT)
+                                                                     0.07      0.09     18.81 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/placeZBUF_60 (net)
+                                                    2     20.79
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/U140/A3 (AND4X1_RVT)
+                                                                     0.07      0.01     18.82 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/U140/Y (AND4X1_RVT)
+                                                                     0.09      0.17     18.99 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/n50 (net)
+                                                    2      6.94
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/U139/A3 (AND3X1_RVT)
+                                                                     0.09      0.00     18.99 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/U139/Y (AND3X1_RVT)
+                                                                     0.04      0.11     19.10 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/n53 (net)
+                                                    1      1.57
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/U138/A1 (OR2X2_RVT)
+                                                                     0.04      0.00     19.10 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/U138/Y (OR2X2_RVT)
+                                                                     0.08      0.11     19.21 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/ex_stage_i/ex_ready_o (net)
+                                                    4     13.63
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U1366/A1 (NAND3X4_RVT)
+                                                                     0.08      0.00     19.21 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U1366/Y (NAND3X4_RVT)
+                                                                     0.07      0.16     19.37 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/id_ready_o (net)
+                                                   11     18.85
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U1106/A2 (NOR2X1_RVT)
+                                                                     0.07      0.00     19.37 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U1106/Y (NOR2X1_RVT)
+                                                                     0.04      0.11     19.48 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/n347 (net)
+                                                    3      3.00
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U1001/A2 (NAND2X0_RVT)
+                                                                     0.04      0.00     19.48 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U1001/Y (NAND2X0_RVT)
+                                                                     0.13      0.11     19.59 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/n308 (net)
+                                                    1      4.78
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/placeZBUF_inst_13324/A (NBUFFX8_RVT)
+                                                                     0.13      0.00     19.59 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/placeZBUF_inst_13324/Y (NBUFFX8_RVT)
+                                                                     0.09      0.14     19.72 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/placeZBUF_38 (net)
+                                                   34     58.33
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/placeHFSINV_476_4168/A (INVX1_RVT)
+                                                                     0.09      0.01     19.74 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/placeHFSINV_476_4168/Y (INVX1_RVT)
+                                                                     0.06      0.07     19.81 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/placeHFSNET_4795 (net)
+                                                    3      2.86
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U88/A3 (OR3X1_RVT)
+                                                                     0.06      0.00     19.81 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U88/Y (OR3X1_RVT)
+                                                                     0.04      0.09     19.90 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/n344 (net)
+                                                    2      2.23
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U538/A (INVX1_RVT)
+                                                                     0.04      0.00     19.90 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U538/Y (INVX1_RVT)
+                                                                     0.05      0.05     19.95 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/n1298 (net)
+                                                    4      4.29
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U999/A4 (AO22X1_RVT)
+                                                                     0.05      0.00     19.95 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/U999/Y (AO22X1_RVT)
+                                                                     0.06      0.10     20.05 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/hwlp_regid_0_ (net)
+                                                    4      5.03
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U254/A (INVX1_RVT)
+                                                                     0.06      0.00     20.05 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U254/Y (INVX1_RVT)
+                                                                     0.05      0.06     20.11 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/n252 (net)
+                                                    3      3.91
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U46/A2 (NAND2X0_RVT)
+                                                                     0.05      0.00     20.11 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U46/Y (NAND2X0_RVT)
+                                                                     0.15      0.13     20.23 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/n12 (net)
+                                                    2      5.52
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/placeHFSINV_3387_3295/A (INVX0_RVT)
+                                                                     0.15      0.00     20.23 f
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/placeHFSINV_3387_3295/Y (INVX0_RVT)
+                                                                     0.12      0.14     20.38 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/placeHFSNET_3711 (net)
+                                                    3      5.80
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U45/A3 (AO21X2_RVT)
+                                                                     0.12      0.00     20.38 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U45/Y (AO21X2_RVT)
+                                                                     0.08      0.13     20.51 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/n11 (net)
+                                                    2      8.94
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U44/A1 (AND2X1_RVT)
+                                                                     0.08      0.00     20.51 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U44/Y (AND2X1_RVT)
+                                                                     0.04      0.08     20.59 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/n1000 (net)
+                                                    1      2.05
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/placeZBUF_inst_18913/A (NBUFFX8_RVT)
+                                                                     0.04      0.00     20.59 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/placeZBUF_inst_18913/Y (NBUFFX8_RVT)
+                                                                     0.06      0.08     20.67 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/placeZBUF_21 (net)
+                                                   32     41.41
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U15/A4 (AO222X1_RVT)
+                                                                     0.06      0.00     20.68 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/U15/Y (AO222X1_RVT)
+                                                                     0.06      0.15     20.82 r
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/n23 (net)
+                                                    1      2.21
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/hwlp_counter_q_reg_0__28_/D (DFFARX1_RVT)
+                                                                     0.06      0.00     20.82 r
+  data arrival time                                                                     20.82
+
+  clock soc_clk (rise edge)                                                   21.00     21.00
+  clock network delay (ideal)                                                  0.00     21.00
+  i_soc_domain/i_pulp_soc/fc_subsystem_i/FC_CORE_FC_CORE_i/id_stage_i/gen_hwloop_regs_hwloop_regs_i/hwlp_counter_q_reg_0__28_/CLK (DFFARX1_RVT)
+                                                                     0.05      0.00     21.00 r
+  clock uncertainty                                                           -0.20     20.80
+  library setup time                                                          -0.07     20.73
+  data required time                                                                    20.73
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                    20.73
+  data arrival time                                                                    -20.82
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.09
+
+
+1

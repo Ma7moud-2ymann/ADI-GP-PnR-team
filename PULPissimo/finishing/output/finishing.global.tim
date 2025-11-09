@@ -1,0 +1,69 @@
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner fast: no PVT mismatches. (PVT-032)
+Information: Corner slow: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'pulpissimo6.dlib:pulpissimo_7_route_ends.design'. (TIM-125)
+Information: Design pulpissimo_7_route_ends has 205498 nets, 0 global routed, 205496 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'pulpissimo'. (NEX-022)
+---extraction options---
+Corner: slow
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: fast
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: pulpissimo_7_route_ends 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 205496 nets are successfully extracted. (NEX-028)
+Information: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: The parasitics of virtually routed nets are automatically saved to RC Cache. (TIM-016)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 205499, routed nets = 205496, across physical hierarchy nets = 0, parasitics cached nets = 205496, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : global timing
+        -format { narrow }
+Design : pulpissimo
+Version: O-2018.06-SP1
+Date   : Mon Oct  6 03:37:26 2025
+****************************************
+
+Setup violations
+--------------------------------------------------------------
+          Total   reg->reg    in->reg   reg->out    in->out
+--------------------------------------------------------------
+WNS      -0.094     -0.094      0.000      0.000      0.000
+TNS      -4.231     -4.231      0.000      0.000      0.000
+NUM          84         84          0          0          0
+--------------------------------------------------------------
+
+Hold violations
+--------------------------------------------------------------
+          Total   reg->reg    in->reg   reg->out    in->out
+--------------------------------------------------------------
+WNS      -0.007     -0.007      0.000      0.000      0.000
+TNS      -0.040     -0.040      0.000      0.000      0.000
+NUM           8          8          0          0          0
+--------------------------------------------------------------
+
+1
